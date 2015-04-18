@@ -1,0 +1,37 @@
+<?php
+		$auth = Zend_Auth::getInstance();
+		$identity = $auth->getIdentity();
+		$userId = strtolower($identity['uid']);
+		$roleId = strtolower($identity['roleId']);
+		$uname = strtolower($identity['uname']);
+		$role = strtolower($identity['role']);
+		$cp = strtolower($identity['cp']);
+		
+		function getLoginedLinks( $cp , $userName , $logoutPath , $cpanelPath ){
+				$output = '';
+				if($cp){
+					$output .= '<div class="loginedTxt Fl"> &nbsp;&nbsp;&nbsp;&nbsp; Welcome '.$userName.' &nbsp;&nbsp;|&nbsp;&nbsp; <a href="'.$cpanelPath.'">CPanel</a>  &nbsp;&nbsp;|&nbsp;&nbsp;<a href="'.$logoutPath.'">Logout</a> </div>';
+				}else{
+					$output .= '<div class="loginedTxt Fl"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Welcome '.$userName.' &nbsp;&nbsp;| &nbsp;&nbsp;<a href="'.$logoutPath.'">Logout</a> </div>';
+				}
+				return $output;
+		}
+			
+?>
+<div class="header">
+  <div class="headerMainIndex">
+    <div class="logolink Fl"><a href="<?php echo $this->baseUrl(); ?>/index"><img src="<?php echo $this->baseUrl();?>/images/blank.gif" alt="" width="277" height="45" border="0" /></a></div>
+    <!-- #logined-->
+    <div class="loginCon Fr">
+		<?php echo getLoginedLinks( $cp ,$uname , $this->baseUrl().'/index/logout' , $this->baseUrl().'/admin/main' );?>   
+    </div>
+    <!-- $logined-->
+    <div class="clear"></div>
+  </div>
+  
+  
+  <!--headerMain-->
+  <div class="mainNavCon">
+    <div class="clear"></div>
+  </div>
+</div>

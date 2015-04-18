@@ -1,0 +1,251 @@
+
+<link href="<?php echo $this->baseUrl(); ?>/css/jquery-ui-css/ui-lightness/jawad-custom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" language="javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery.validate.js"></script>
+<script type="text/javascript" language="javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery-ui-1.8.4.custom.min.js"></script>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function(){
+        var submitted = false;
+        $("#color").validate({
+            rules: {
+                ecolor: {required : true},
+                icolor: {required : true}
+            },
+        		
+            messages: {
+                ecolor: {required : "Please select an exterior color<br/>"},
+                icolor: {required : "Please select an interior color<br/>"}
+            },
+            errorPlacement: function(error, element) {
+                error.appendTo($("#dialog"));
+            },
+        
+            submitHandler: function() {
+                $( "#form_dialog" ).dialog( "open" );return false;
+            },
+		
+            showErrors: function(errorMap, errorList){
+                if (submitted) {
+                    this.defaultShowErrors();
+                    $("#dialog").dialog('open');
+                    submitted = false;
+                }
+            },
+		
+		
+		
+            invalidHandler: function(form, validator) {
+                submitted = true;
+            }
+        });
+	
+        $("#dialog").dialog({
+            autoOpen:false,
+            modal:true,
+            minHeight:55,
+            close: function(event, ui){
+                $("#dialog").html("");
+                $("#dialog").dialog('close');
+            }
+        });
+        $( "#form_dialog" ).dialog({
+            autoOpen: <?php echo $this->dialogShow; ?>,
+            modal:true,
+            minWidth:410,
+            minHeight:290,
+            autoResize:true,
+            title:'Options',
+            closeOnEscape: true,
+            position: 'center',
+            close: function(event, ui){
+                $("#form_dialog").dialog('close');//$("#form_dialog").html("");
+            }
+        });
+		
+    });
+</script>
+<script type="text/javascript" language="javascript" >
+    function extColor(value){
+	
+        eColorHid	=	document.getElementById('extcolor');
+        eColorHid.value	=	value;
+	
+    }
+	
+    function intColor(value){
+	
+        iColorHid	=	document.getElementById('intcolor');
+        iColorHid.value	=	value;
+	
+    }
+
+    function setDealType(value){
+        dealType	=	document.getElementById('dealType');
+        dealType.value	=	value;
+	
+    }
+</script>
+
+
+<div class="colorContainer">
+    <div class="top"><img src="<?php echo $this->baseUrl(); ?>/images/car-color-option-images/top.png" width="901" height="5" alt="" /></div>
+    <div class="mid">
+        <div class="midContainer">
+            <div class="topheading">
+                <div class="leftheading"><img src="<?php echo $this->baseUrl(); ?>/images/car-color-option-images/heading.png" width="252" height="20" /></div>
+                <div class="rightlink"><span class="red15">
+                <a href="<?php echo $this->url(array('controller'=>'presentation','action'=>'makes')) ?>">Start Over</a> &gt; <a href="<?php echo $this->url(array('controller'=>'presentation','action'=>'makes')) ?>">Make</a>&gt; <a href="<?php echo $this->url(array('controller'=>'presentation','action'=>'makes')) ?>">Model</a>
+                </span></div>
+                <div class="clear"></div>
+            </div>
+            <form name="color" id="color" action="presentation.php" method="post" enctype="multipart/form-data">
+                <div class="contenContainer">
+                    <div class="logobar">
+                        <div class="logo"><img src="<?php echo $this->baseUrl(); ?>/images/car-color-option-images/honda.png" width="71" height="45" /></div>
+                        <div class="make">Make: <?php echo $this->year; ?></div>
+                        <div class="name"><?php echo $this->modelName; ?></div>
+                        <div class="trim"><?php echo $this->trimName; ?></div>                       
+                        <div class="clear"></div>
+                         <div class="errorMSG-autoh">
+                        <?php
+						 if ($this->vehicleMessage != '') {
+                         echo '<br /><br />'.$this->vehicleMessage . '<br />';
+                         }
+						?>
+                        </div>
+                    </div>
+                    <div class="bottomContainer">
+                        <div class="left">
+                            <div class="head">Exterior Color</div>
+
+
+                            <?php foreach ($this->exteriorColors as $ecolor): ?>
+                                <div class="colorselection">
+                                    <div class="radiobtn">
+                                        <input type="radio" name="ecolor" id="ecolor<?php echo $ecolor->getExteriorColorId(); ?>" value="<?php echo $ecolor->getExteriorColorId(); ?>" onclick="extColor(this.value)" />
+                                    </div>
+                                    <div class="color"><div id="<?php echo $ecolor->getExteriorColorId(); ?>" style="width:37px; height:15px; background-color:#<?php echo substr($ecolor->getColorCode(), 2); ?>; border-bottom: solid 1px #000; border-right: solid 1px #000;"></div></div>
+                                    <div class="name"><?php echo $ecolor->getColorLabel(); ?></div>
+                                    <div class="clear"></div>
+                                </div>
+                            <?php endforeach ?>
+
+                            </div>
+                            <div class="right">
+                                <div class="head">Interior Color</div>
+                                <div class="container">
+
+                                <?php foreach ($this->interiorColors as $icolor): ?>
+                                    <div class="leftbox">
+                                        <div class="top"><img src="<?php echo $this->baseUrl(); ?>/assets/interiors/<?php echo $icolor->getColorImage(); ?>" width="100" height="75" /></div>
+                                        <div class="bottom">
+                                            <input type="radio" name="icolor" id="icolor<?php echo $icolor->getInteriorColorId(); ?>" value="<?php echo $icolor->getInteriorColorId(); ?>" onclick="intColor(this.value)" />
+                                        <?php echo $icolor->getColorLabel(); ?></div>
+                                </div>
+                                <?php endforeach ?>
+
+                                        <div class="clear"></div>
+
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+
+                            </div>
+
+
+                            <!-- #Button-->
+                            <div class="btnOuterDiv">
+                                <div ><img src="<?php echo $this->baseUrl(); ?>/images/car-color-option-images/line.png" width="828" height="1" /></div>
+                                <div class="btnLeft">&nbsp;</div>
+                                <div class="btnContainer">
+                                    <div class="cashButton" id="opener"><input type="image" src="<?php echo $this->baseUrl(); ?>/images/car-color-option-images/cash-btn.png" width="162" height="35" onclick="setDealType('cash')" /></div>
+                                    <div class="paymentButton" id="opener"><input type="image" src="<?php echo $this->baseUrl(); ?>/images/car-color-option-images/payment-btn.png" width="188" height="35" onclick="setDealType('payment')"/></div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <!-- $Button-->
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bottom"><img src="<?php echo $this->baseUrl(); ?>/images/car-color-option-images/bottom.png" width="901" height="6" alt="" /></div>
+
+        </div>
+
+
+        <div id="dialog"></div>
+        <div class="form_dialog" id="form_dialog">
+            <div class="formContainer">
+                <form action="<?php echo $this->form->getAction(); ?>" enctype="<?php echo $this->form->getEnctype(); ?>" method="<?php echo $this->form->getMethod(); ?>" id="<?php echo $this->form->getAttrib('id'); ?>" name="<?php echo $this->form->getName(); ?>">
+                    <div class="errorMSG-autoh">
+                <?php
+                                        if ($this->refNoMessage != '') {
+                                            echo $this->refNoMessage . '<br/>';
+                                        }
+                                        $msg = $this->form->getMessages();
+                                        foreach ($msg as $elemName => $messages) {
+                                            foreach ($messages as $message) {
+                                                echo $this->escape($message) . '<br/>';
+                                            }
+                                        }
+                ?>
+                <?php
+                                        echo $this->form->dealType;
+                                        echo $this->form->extcolor;
+                                        echo $this->form->intcolor;
+                ?>
+                                    </div>
+
+                                    <div class="rowContainer">
+                                        <div class="labelContainer">Enter Reference No.<span class="red15">*</span></div>
+                                        <div class="fieldContainer-j"><?php echo $this->form->refNo; ?></div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="rowContainer">
+                                        <div class="labelContainer">Sales Person First Name<span class="red15">*</span></div>
+                                        <div class="fieldContainer-j"><?php echo $this->form->salesPersonFirstName; ?></div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="rowContainer">
+                                        <div class="labelContainer">Sales Person Last Name<span class="red15">*</span></div>
+                                        <div class="fieldContainer-j"><?php echo $this->form->salesPersonLastName; ?></div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="rowContainer">
+                                        <div class="labelContainer">Customer First Name</div>
+                                        <div class="fieldContainer-j"><?php echo $this->form->customerFirstName; ?></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="rowContainer">
+                                        <div class="labelContainer">Customer Last Name</div>
+                                        <div class="fieldContainer-j"><?php echo $this->form->customerLastName; ?></div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="rowContainer">
+                                        <div class="labelContainer">Customer Email Address</div>
+                                        <div class="fieldContainer-j"><?php echo $this->form->customerEmail; ?></div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="rowContainer">
+                                        <div class="labelContainer">Customer Phone</div>
+                                        <div class="fieldContainer-j"><?php echo $this->form->customerPhone; ?></div>
+                                        <div class="clear"></div>
+                                    </div>
+
+
+
+                                    <div class="rowContainer">
+                                        <div class="midField"><?php echo $this->form->submit; ?></div>
+            </div>
+        </form>
+    </div>
+
+</div>

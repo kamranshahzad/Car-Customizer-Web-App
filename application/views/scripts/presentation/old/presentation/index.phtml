@@ -1,0 +1,72 @@
+<html>
+<head>
+<title> .: Deals Presentation : AddonCars :.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+	body {
+		font-family: Tahoma, Arial;
+		font-weight: normal;
+		font-size: 11px;
+		text-decoration: none;
+		margin: 0px;
+		padding: 0px;
+	}
+	.clear{ clear:both;}
+	.maincontainer01 {
+		background-image: url(http://www.addoncars.com/aoc/public/images/bg_strip.jpg);
+		background-repeat: repeat-x;
+		background-position: center top;
+	}
+	.center { margin-left:auto; margin-right:auto;}
+	.flashUI{
+	    width:1200px;
+		height:100%;
+		//padding-top:56px;
+	}
+	#flash {
+		width: 100%;
+		height: 690px;
+	}
+</style>
+
+<script type="text/javascript" src="http://www.addoncars.com/aoc/public/swf/swfobject/swfobject.js"></script>
+</head>
+<body>
+	<div class="maincontainer01 center">
+    	<div class="flashUI center">
+        <div id="flashMovie"></div>
+        <script type="text/javascript">
+		
+				var browserHeight = 0;
+				if (window.innerWidth) //if browser supports window.innerWidth
+					browserHeight = window.innerHeight;
+				else if (document.all) //else if browser supports document.all (IE 4+)
+					browserHeight = window.innerHeight;
+		
+				
+				// <![CDATA[
+				var so = new SWFObject("http://www.addoncars.com/aoc/public/swf/index.swf", "flashMovie", "100%", browserHeight , "8", "#FFFFFF");
+				so.addParam("scale", "false");
+				so.addParam("allowscriptaccess", "exactFit");
+				so.addVariable("dealType", "<?php echo $this->dealType ;?>");//payment cash
+				so.addVariable("vehicleID", "<?php echo $this->vehicleID ;?>");
+				so.addVariable("dealerID", "<?php echo $this->dealerID ;?>");
+				so.addVariable("userID", "<?php echo $this->userID ;?>");
+				so.addVariable("dealRef", "<?php echo $this->dealRef ;?>");
+				so.addVariable("dealWork", "<?php echo $this->dealWork ;?>"); //modify
+				so.addVariable("makeID", "<?php echo $this->makeID ;?>");
+				so.addVariable("trimID", "<?php echo $this->trimID ;?>");
+				so.addVariable("exteriorColorID", "<?php echo $this->exteriorColorID ;?>");
+				so.addVariable("interiorColorID", "<?php echo $this->interiorColorID ;?>");
+				so.addVariable("ModelName", "<?php echo $this->ModelName ;?>");
+				so.addVariable("YearName", "<?php echo $this->YearName ;?>");
+				so.addVariable("InteriorColor", "<?php echo $this->InteriorColor ;?> Inetrior");
+				so.addVariable("invoiceID", "<?php echo $this->invoiceID ;?>");
+				so.addParam("wmode", "transparent");
+				so.write("flashMovie");
+				// ]]>
+            </script>
+        </div>
+    </div>
+</body>
+</html>

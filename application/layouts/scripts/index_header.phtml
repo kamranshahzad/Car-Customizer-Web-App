@@ -1,0 +1,60 @@
+<div class="header">
+	<div class="headerMainIndex">
+    <div class="logolink Fl"><a href="<?php echo $this->baseUrl(); ?>/index"><img src="<?php echo $this->baseUrl();?>/images/blank.gif" alt="" width="277" height="45" border="0" /></a></div>
+	<?php
+			$auth = Zend_Auth::getInstance();
+			$identity = $auth->getIdentity();
+			$userId = strtolower($identity['uid']);
+			$roleId = strtolower($identity['roleId']);
+			$uname = strtolower($identity['uname']);
+			$role = strtolower($identity['role']);
+			$cp = strtolower($identity['cp']);
+			
+			
+			
+			function getLoginedLinks( $cp ,  $userName , $logoutPath , $cpanelPath ){
+				$output = '';
+				if($cp){
+					$output .= '<div class="loginedTxt Fl"> &nbsp;&nbsp;&nbsp;&nbsp; Welcome '.$userName.' &nbsp;&nbsp;|&nbsp;&nbsp; <a href="'.$cpanelPath.'">CPanel</a>  &nbsp;&nbsp;|&nbsp;&nbsp;<a href="'.$logoutPath.'">Logout</a> </div>';
+				}else{
+					$output .= '<div class="loginedTxt Fl"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Welcome '.$userName.' &nbsp;&nbsp;| &nbsp;&nbsp;<a href="'.$logoutPath.'">Logout</a> </div>';
+				}
+				return $output;
+			}
+			
+	if($userId != ''){
+	?>
+    <!-- #logined-->
+    <div class="loginCon Fr">
+      <?php echo getLoginedLinks($cp , $uname , $this->baseUrl().'/index/logout' , $this->baseUrl().'/admin/main' );?>
+      
+    </div>
+    <!-- $logined-->   
+    <?php } else { ?>
+        <form action="<?php echo $this->form->getAction(); ?>" enctype="<?php echo $this->form->getEnctype(); ?>" method="<?php echo $this->form->getMethod(); ?>" id="<?php echo $this->form->getAttrib('id'); ?>" name="<?php echo $this->form->getName(); ?>">
+        <div class="loginCon Fr">
+		
+		<div class="logininput Fl"><?php echo $this->form->username; ?>
+		</div>
+		<div class="logininput Fl"><?php echo $this->form->password; ?>
+		</div>
+		<?php echo $this->form->submit; ?> </div>
+		</form>
+    <?php } ?>
+   <div class="clear"></div>
+  </div>
+		<div class="mainNavCon">
+			<div class="colL Fl" id="nav">
+			  <ul>
+			    <li><a href="<?php echo $this->baseUrl();?>/index" class="navActive">Home</a></li>
+            	<li><img src="<?php echo $this->baseUrl();?>/images/nav-sep.gif" alt="" /></li>
+			    <li><a href="<?php echo $this->baseUrl();?>/index/aboutus">About us</a></li>
+				<li><img src="<?php echo $this->baseUrl();?>/images/nav-sep.gif" alt="" /></li>
+			    <li><a href="<?php echo $this->baseUrl();?>/index/contactus">Contact us</a></li>
+			  </ul>
+			  <div class="clear"></div>
+		    </div>
+			<div class="colR Fr"><a href="<?php echo $this->baseUrl();?>/presentation/">Dealers Join Now</a></div>
+			<div class="clear"></div>
+		</div><!--mainNavCon-->
+	</div>

@@ -1,0 +1,308 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* Commans */
+
+select { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; border:#7f9db9; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; padding:3px;} 
+
+
+.ad-midContainer {width:880px; margin:0 auto;padding-top:10px;}
+.adpage-title { border-bottom:#e5e5e5 thin solid; padding-bottom:10px;}
+.adpage-title .title {color:#be0000; font-weight:bold; font-size:large;}
+
+
+.user-strip{font-size:12px; padding-top:10px; width:830px;margin:0 auto; margin-bottom:5px;}
+.user-strip .user-name { float:left; color:#be0000;font-weight:bold;}
+.user-strip .user-name a { color:#be0000;font-weight:bold;}
+.user-strip .user-name a:hover { color:#be0000; text-decoration:underline; font-weight:bold;}
+.user-strip .logout {font-weight:bold; float:right;}
+.user-strip .logout a { color:#be0000;text-decoration:none;}
+.user-strip .logout a:hover {color:#be0000; text-decoration:underline;}
+
+.option-box-top { background:url(../images/top-strip.jpg) top center repeat-y; height:30px; width:830px;margin:0 auto;}
+.option-box-top .heading { padding:5px; color:#FFF; font-weight:bold; font-size:15px;}
+.option-box-top .heading a { color:#FFF; font-weight:bold; font-size:15px;}
+.option-box-top .heading a:hover{ color:#FFF; font-weight:bold; font-size:15px; text-decoration:underline;}
+.option-box-top2 { background:url(../images/top-stip-02.jpg) top center no-repeat; height:6px; }
+.option-box-middle { background:url(../images/middle-strip.jpg) top center repeat-y; width:830px;margin:0 auto;}
+.option-box-bottom { background:url(../images/bottom-strip.jpg) top center no-repeat; height:6px; }
+
+
+.option-box-top-half { background:url(../images/top-strip-half.jpg) top center repeat-y; height:30px; width:398px;margin:0 auto;}
+.option-box-top-half .heading { padding:5px; color:#FFF; font-weight:bold; font-size:15px;}
+.option-box-top-half .heading a { color:#FFF; font-weight:bold; font-size:15px;}
+.option-box-top-half .heading a:hover{ color:#FFF; font-weight:bold; font-size:15px; text-decoration:underline;}
+.option-box-top2 { background:url(../images/top-stip-02.jpg) top center no-repeat; height:6px; }
+.option-box-middle-half { background:url(../images/middle-strip-half.jpg) top center repeat-y; width:399px; height:250px; margin:0 auto;}
+.option-box-bottom-half { background:url(../images/bottom-strip-half.jpg) top center no-repeat; height:6px; }
+
+
+.alert-wrapper {width:805px;margin:0 auto;}
+.alert-wrapper .alert-box-title { font-size:13px; font-weight:bold; padding-top:10px; border-bottom:#e5e5e5 thin solid;}
+.alert-wrapper .message-txt { font-size:12px; padding-top:2px; text-align:left; color:#C30; cursor:pointer;}
+.alert-wrapper .message-txt:hover { font-size:12px; padding-top:2px; text-align:left; color:#C30; text-decoration:underline; cursor:pointer;}
+.alert-wrapper .updates-container {font-size:12px;padding-top:5px;}
+
+.statis-wrapper {width:805px;margin:0 auto; font-size:12px; padding-top:10px;} 
+
+.option-box-middle .option-heading {font-weight:bold;border-bottom:#e5e5e5 thin solid;width:792px;margin:0 auto;}
+
+.icon-wrapper { width:790px; margin:0 auto; padding-top:20px;}
+.icon-wrapper .icons-box { width:120px; height:90px;float:left; padding-top:5px;}
+.icon-wrapper .icons-box img { display:block;margin:0 auto;}
+.icon-wrapper .icons-box .icon-text { font-size:12px;font-weight:bold;width:120px; text-align:center; padding-top:5px; color:#000;}
+
+
+.form-wrapper {width:805px;margin:0 auto; font-size:12px;}
+
+
+.option-wrapper {width:805px;margin:0 auto;}
+.option-wrapper .left-option-box { width:800px; float:left;}
+.option-wrapper .right-option-box { width:430px; float:right;}
+.small-container {font-weight:bold;border-bottom:#e5e5e5 thin solid; font-size:14px; padding-top:10px;}
+.small-container-text {font-size:12px; padding-top:5px;}
+
+.quick-links-wrapper {width:805px;margin:0 auto; font-size:12px; }
+.quick-links-wrapper-half {width:398px;margin:0 auto; font-size:12px; }
+#navcontainer {  padding-bottom:10px; width:800px; }
+#navcontainer-half {  padding-bottom:10px; padding-left:10px; width:398px; }
+ul#navlist{margin-left: 0;padding-left: 0;white-space: nowrap;}
+#navlist li{display: inline;list-style-type: none;font-weight:bold; float:left; margin-left:5px; margin-top:15px;}
+#navlist a { padding: 5px 15px; }
+#navlist a:link, #navlist a:visited{color: #fff;background-color: #be0000;text-decoration: none;}
+#navlist a:hover{color: #fff;background-color:#ce4040;text-decoration: none;}
+
+
+
+.red12bold{font:Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color:#C30;}
+.arial-12-green{font:Arial, Helvetica, sans-serif;font-size:12px;color:#390;}
+.arial-12-red{font:Arial, Helvetica, sans-serif;font-size:12px;color:#C30;}
+.arial-12-red a {font:Arial, Helvetica, sans-serif;font-size:12px;color:#C30;}
+.arial-12-red a:hover {font:Arial, Helvetica, sans-serif;font-size:12px;color:#C30; text-decoration:underline;}
+
+
+.outerDiv{width:825px; text-align:center;}
+.makeInnerDiv{width:170px; height:170px;float:left;}
+.modelInnerDiv{width:165px; height:170px;float:left;}
+.colorInnerDiv{width:130px; height:130px;float:left;}
+
+.input1{width:300px;}
+.input-field-250{width:250px;}
+.input-field-250-error{width:250px; border: solid 2px #C30;}
+.input-field-400{width:400px;}
+.input-field-400-error{width:400px; border: solid 2px #C30;}
+.input-field-150{width:150px;}
+.input-field-150-error{width:150px; border: solid 2px #C30;}
+.errorMSG-autoh{ color:#c21010; background:#ececec; border:#e4e4e4 solid thin; padding:10px;}
+
+
+/* color options */
+.btnOuterDiv{ height:75px; margin-top:15px;}
+.btnLeft{ float:left;  margin-top:15px;margin-bottom:15px; width:455px}
+.btnContainer{ float:right; margin-top:15px;margin-bottom:15px; width:370px}
+.cashButton{ float:left; margin-right:15px; }
+.paymentButton{ float:right;}
+
+.form_dialog{width:385px;}
+.formContainer{width:384px;}
+.rowContainer{width:380px; height:25px}
+.labelContainer{width:190px; float:left;}
+.fieldContainer-j{width:190px; float:right;}
+.FormTextField{width:180px;}
+.midField{ text-align:center;}
+
+
+.search-existing-deals-form{width:375px;height:25px;}
+.search-existing-deals{width:800px;height:25px;}
+.search-existing-deal-label{float:left; width:100px; font-size:12px; margin-top:7px;}
+.float-left{ float:left;}
+.float-right{ float:right;}
+.result-search-existing-deal-label-ref-bold{ width:150px; font-size:12px; font-weight:bold; padding-right:5px;}
+.result-search-existing-deal-label-vehicle-bold{ width:400px; font-size:12px; font-weight:bold;  padding-right:5px;}
+.result-search-existing-deal-label-status-bold{ width:100px; font-size:12px; font-weight:bold; padding-right:5px;}
+.result-search-existing-deal-label-edit-bold{ width:130px; font-size:12px; font-weight:bold;}
+
+.result-search-existing-deal-label-ref{ width:150px; font-size:12px; padding-right:5px;}
+.result-search-existing-deal-label-vehicle{ width:400px; font-size:12px; padding-right:5px;}
+.result-search-existing-deal-label-status{ width:100px; font-size:12px; padding-right:5px;}
+.result-search-existing-deal-label-edit{ width:130px; font-size:12px;}
+
+
+.two-half-box-wrapper{width:830px; margin: 0px auto;}
+
+.hidden{ display:none;}
+.visible{ display:block;}
+
+.logoutLink a{ font-size:11px; line-height:20px;  font-family:Arial, Helvetica, sans-serif; background:url(../images/nav-red-bg.gif) repeat-x; display:block; padding-left:15px; padding-right:15px;  color:#FFF; text-transform:uppercase;  font-weight:normal; text-shadow:#61615c 1px 1px 1px;}
+.td-border { border-bottom: solid 1px; border-bottom-color:#c21010;}
+.td-border-top { border-top: solid 1px; border-top-color:#c21010;}
+.view-notes { font:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#FFF; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px; background-color:#c21010; cursor:pointer; }
+.notes-hidden{ float:right; display:none; width:500px;height:20px;}
+.notes-visible{ float:right; display:block; width:500px;height:20px;}
+.price-modifier-form-button { width:100px; text-align:center; font:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#FFF; padding-top:8px; padding-bottom:8px; background-color:#c21010; margin-left:5px; margin-right:5px; cursor:pointer; }
+.dealer-name-invoice{ font:Arial, Helvetica, sans-serif; font-size:22px; font-weight:bolder; font-stretch: expanded; color:#773C3C;}
+.dealer-street-address-invoice{ font:Arial, Helvetica, sans-serif; font-size:11px; font-weight:bolder; font-stretch:expanded; color:#773C3C;}
+.dealer-sales-phone-invoice{ font:Arial, Helvetica, sans-serif; font-size:11px; font-weight:bolder; font-stretch:expanded;}
+
+/* logined box*/
+.loginedTxt { color:#FFF; font-size:12px; } 
+.welcomeTxt { width:160px; text-align:left;}
+.loginedTxt a { color:#FFF; text-decoration:none;}
+.loginedTxt a:hover { color:#FFF; text-decoration:underline;}
+
+
+.submitButton{ border:none; margin-top:10px;background-color:#C00; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#FFFFFF; height:25px; cursor:pointer;}
+.submitButton-deal{ border:none; background-color:#C00; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#FFFFFF; height:25px; cursor:pointer;}
+.hyperlinkBtn { color:#FFF; background-color:#c00;font-family:Verdana, Geneva, sans-serif; font-weight:bold; padding:5px 10px; font-size:11px;}
+
+
+
+.contentHeading{ font-size:16px; font-weight:bold; color:#FFF; line-height:30px; font-family:Verdana, Geneva, sans-serif;}
+.contentTxt { color:#323232; font-size:12px;}
+.tooltipinputerr
+{
+    padding: 2px 0 2px 18px;
+    border: solid 1px red;
+    background: #ffff99 url(/images/unchecked.gif) no-repeat 2px center;
+    }
+    
+.tooltipinputok
+{
+    padding: 2px 0 2px 18px;
+    border: solid 1px green;
+    background: url(/images/checked.gif) no-repeat 2px center;
+    }
+    
+.tooltipshowpanel
+{
+    z-index: auto;
+    display: none;
+    position:absolute;
+    width: 276px;
+    height: 35px;
+    overflow: hidden;
+    text-indent: 5px;
+    line-height: 40px;
+    font-size: 12px;
+    font-family: Arial;
+    background: url(/images/exclamation.gif) no-repeat left top;
+    opacity:0.9;
+    filter: alpha(opacity=90);
+    }
+
+/*  UI Implementations */
+table.userTblCls
+{
+	background-color: #fafafa;
+	border: 1px #c8c8c8 solid;
+	border-collapse: collapse;
+	border-spacing: 0px; 
+}
+
+
+.contactDeptHeading
+{ 
+background-color: #c8c8c8;
+font-family: Verdana;
+font-weight: bold;
+font-size: 12px;
+color: #404040;
+padding:5px;
+}
+.userTblTd
+{ 
+border-bottom: 1px #6699CC dotted;
+color:#333;
+padding:5px;
+font-size:12px;
+}
+.userTblTd2
+{ 
+border-bottom: 1px #6699CC dotted;
+text-align: left;
+padding:5px;
+}
+.userTblTd a { color:#cc0000; text-decoration:none; font-weight:bold; font-family:Verdana, Geneva, sans-serif;}
+.userTblTd a:hover {color:#cc0000; text-decoration:underline;}
+
+
+.zend_form {}
+.zend_form label { font-size:12px;}
+
+/* Reports Overview */
+.reportContainer {font-size: 12px;margin: 0 auto 5px;padding-top: 10px;width: 800px;}
+.leftReportBox   { float:left; width:392px;}
+.rightReportBox  { float:right;width:392px;}
+.reportTime      {float:right; line-height:30px; font-weight:bold;}
+.reportHeading   { background-color:#c8c8c8; padding:5px; display:block;width:392px; font-weight:bold; font-size:14px;}
+.reportContent   { padding:5px;}
+.reportStatictics{ padding:5px;}
+.reportDetails   { padding:5px; margin-top:20px;}
+.reportDetails a { color:#C00; text-decoration:none;}
+.reportDetails a:hover { color:#C00; text-decoration:underline;}
+
+
+
+
+.start-end-date-main-wrapper-div{ width:800px; height:55px;}
+.start-date-div{ width:325px; height:35px; margin-top:10px;}
+.end-date-submit-wrapper-div{ width:450px; height:35px;}
+.end-date-div{ width:325px; height:35px; margin-top:10px;}
+.button-div{width:70px; height:35px;}
+
+.print-button-main-wrapper-div{ width:800px; height:35px;}
+.left-div{ width:475px; height:35px;}
+.right-div{ width:170px; height:35px;}
+.print-button-div{width:80px; height:35px;}
+
+
+
+/*  Form Elements */
+.formTable { font-weight:bold; font-size:12px; }
+.formTable label { display:block;padding-right:6px;text-align:right;font-weight:bold;}
+.drpTxt { font-size:12px; font-family:Verdana, Geneva, sans-serif;}
+.lblTxt { font-size:12px; font-family:Verdana, Geneva, sans-serif;}
+.inputWdt{ width:160px;}
+.inputTxt {font-size:12px;background-color: #e9e9e9;border: 1px solid #aaa8a8; padding:4px;}
+.reportBtn{ border:none; margin-top:10px;background-color:#C00; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#FFFFFF; height:25px; cursor:pointer;}
+.mainWrapper-bg-div{width:198px; height:200px; float:left; padding:15px 0px 15px 52px;}
+.bg-name-default{text-align:center; padding-top:05px;}
+.dealFrmButton { background:url(../images/configuration-page-images/open-deal-btn.png) top no-repeat; border:none; cursor:pointer; width:122px; height:35px;}
+
+
+/*  Permissions frm */
+
+.permissions-frm dt { font-size:12px; font-weight:bold; padding-top:10px; padding-bottom:10px;}
+
+
+/*  Dashboard    */
+.statTbl {}
+.statTbl .head { background-color:#CCC; font-weight:bold; padding:5px;border:none;}
+.statTbl td { padding:2px;}
+
+.dealsBlock { background-color:#b5b5b5; border:#a1a1a1 solid thin; padding:5px; margin-top:4px;margin-bottom:4px;}
+.dealsBlock .dealStatus { width:70%; float:left;}
+.dealsBlock .dealCount  { width:30%; float:right; text-align:right;}
+
+.dealsUsers { background-color:#787878; border:#a1a1a1 solid thin; padding:5px; margin-top:4px;margin-bottom:4px; color:#FFF;}
+
+.childUserTbl { background-color:#dbdbdb;}
+
+/* Error Controller */
+.errorWrapper { font-size:13px;}
+.errorWrapper .errorBox { background:#ebebeb; border:#d8d7d7 solid thin; padding:5px; margin:5px 0 5px;}
+.errorWrapper .errorBox .errorHeading{ font-size:14px; font-weight:bold;}
+
+
+/* Deal Search Form  */
+#finddeal label { font-weight:bold;}
+#finddeal #ref { width:250px;}
+.form-errors { margin-top:10px;}
+.form-errors .errors { color:#FF0000; font-style:italic;}
+
+
+/*  Error Messages */
+.errorMSG { color:#F00; font-size:12px; margin-bottom:10px; font-style:italic;}
+

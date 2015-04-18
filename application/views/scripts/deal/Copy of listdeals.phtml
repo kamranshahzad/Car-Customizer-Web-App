@@ -1,0 +1,59 @@
+      <div class="adpage-title">
+        <div class="title" >Deals Listing</div>
+      </div>
+      <div class="user-strip">
+			<?php echo $this->links; ?>
+        <div class="clear"></div>
+        <div style="margin-top:12px;margin-bottom:15px;">
+        	<?php echo $this->addOption; ?>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <?php if (count($this->messages)) : ?>
+                 <br/>
+                <div class="errorMSG-autoh">
+                	<ul id="messages">
+                    	<?php foreach ($this->messages as $message) : ?>
+                            <li><?php echo $this->escape($message); ?></li>
+                        <?php endforeach; ?>
+                	</ul>
+                </div>
+      <?php endif; ?>
+      
+       <?php
+              if(isAllowd($this->roleId)){
+	   ?>
+       <ul class="tabs">
+            <li><a href="#tab1">DMS Deals</a></li>
+            <li><a href="#tab2">User Deals</a></li>
+       </ul>
+       
+       <?php	
+			  }else{
+				echo $this->ownDeals;	
+			  }
+	   ?>
+       <div class="tab_container">
+                    <div id="tab1" class="tab_content">
+                        <?php 
+							echo $this->pendingDeal;
+							echo $this->openDeal;
+							echo $this->completeDeal; 
+							echo $this->finalDeal; 
+							
+						?>
+                    </div>
+                    <div id="tab2" class="tab_content">
+                        <?php echo $this->userDeals; ?>
+                    </div>
+        </div>
+
+      
+      <?php
+      function isAllowd($roleId){
+		  if($roleId == 1 || $roleId == 2 || $roleId == 3){
+			 return true; 
+		  }
+		  return false;
+	  }
+	  ?>

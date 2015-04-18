@@ -1,0 +1,56 @@
+<div class="ConfigContainer">
+	<div class="top"><img src="<?php echo $this->baseUrl();?>/images/car-color-option-images/top.png" width="901" height="5" alt="" /></div>
+	<div class="mid">
+	<div class="midContainer">
+	<div class="topheading">
+	<div class="leftheading"><img src="<?php echo $this->baseUrl() ;?>/images/configuration-page-images/heading.png" width="481" height="17" /></div>
+	
+	</div>
+	<div class="contenContainer">
+	<div class="left">
+	<div class="head">Configure your own Deal</div>
+	<div class="btn"><a href="<?php echo $this->url(array('controller'=>'presentation','action'=>'makes')) ?>"><img src="<?php echo $this->baseUrl() ;?>/images/configuration-page-images/select-vehicle-btn.png" width="152" height="34" /></a></div>
+	</div>
+	<div class="right">
+	<div class="head">I have an AOC Ref No.</div>
+    <span class="arial-12-red">
+
+	<?php 
+		if (count($this->errorMessage)): 
+		    foreach ($this->errorMessage as $message) :
+				echo $message;
+			endforeach;
+		endif;
+	?>
+    </span>
+    
+	<form action="<?php echo $this->form->getAction(); ?>" enctype="<?php echo $this->form->getEnctype(); ?>" method="<?php echo $this->form->getMethod(); ?>" id="<?php echo $this->form->getAttrib('id'); ?>" name="<?php echo $this->form->getName(); ?>">
+    <br>
+    <div class="formContainer">
+	<div class="fieldContainer">
+	<div class="text">AOC Ref No.: </div>
+	<div class="field">
+	  <?php echo $this->form->referenceNo; ?>
+	</div>
+	<div class="clear"></div>
+	</div>
+	<!--<div class="fieldContainer">
+	<div class="text">Customer Email: </div>
+	<div class="field">
+	  <input type="text" name="customerEmail" id="customerEmail" />
+	</div>
+	<div class="clear"></div>
+    
+	</div>-->
+	<div class="btn"><?php echo $this->form->submit; ?></div>
+	</div>
+    </form>
+	
+	</div>
+	<div class="clear"></div>
+	</div>
+	</div>
+	</div>
+	<div class="bottom"><img src="<?php echo $this->baseUrl() ;?>/images/car-color-option-images/bottom.png" width="901" height="6" alt="" /></div>
+	
+	</div>

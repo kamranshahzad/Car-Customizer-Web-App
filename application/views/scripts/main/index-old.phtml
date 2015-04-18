@@ -1,0 +1,233 @@
+<div class="ad-midContainer">
+        <!-- #Contents -->
+        
+       	<div class="adpage-title">
+        	<div class="title">DashBoard</div>
+        </div>
+        
+        <div class="user-strip">
+        	<div class="user-name">
+           	 	Welcome Mr-admin
+            </div>
+            <div class="logout"><a href="<?php echo $this->baseUrl() ;?>/admin/logout">Logout</a></div>
+            <div class="clear"></div>
+        </div>
+
+        
+       <div class="option-box-top">
+        	<div class="heading">Alert & Updates</div>
+        </div>
+        <div class="option-box-middle">
+        		<div class="alert-wrapper">
+                    <div class="alert-box-title">
+                        Messages
+                    </div>
+                    <div >
+                    <table>
+                    <tr><td><a href="<?php echo $this->baseUrl() ;?>/user/add" class="message-txt"><?php echo $this->dealerUsersSettingsMessage ;?></a></td></tr>
+                    <tr><td><a href="<?php echo $this->baseUrl() ;?>/dealerdefaults/edit" class="message-txt"><?php echo $this->dealerDefaultsMessage ;?></a></td></tr>
+                    <tr><td><a href="<?php echo $this->baseUrl() ;?>/dealermanufacturersettings/edit" class="message-txt"><?php echo $this->dealerManufacturerSettingsMessage ;?></a></td></tr>
+                    <tr><td><a href="<?php echo $this->baseUrl() ;?>/dealerpartsettings/edit" class="message-txt"><?php echo $this->dealerPartSettingsMessage ;?></a></td></tr>
+                    <tr><td><a href="<?php echo $this->baseUrl() ;?>/dealerpartcategoriessettings/edit" class="message-txt"><?php echo $this->dealerPartCategoriesSettingsMessage ;?></a></td></tr>
+                    </table>
+                   
+                    </div>
+                    <div class="alert-box-title">
+                        Notifications
+                    </div>
+                     <div class="updates-container">
+                    <table>
+                    <tr><td class="<?php echo $this->notificationClass ;?>"><?php echo $this->notificationMessage ;?></td></tr>
+                    </table>
+                    </div>
+                </div>
+        </div>
+        <div class="option-box-bottom"></div>
+        
+        <br />
+      <div class="option-box-top">
+        	<div class="heading">Vehicle Statistices</div>
+        </div>
+        <div class="option-box-middle">
+        	<div class="statis-wrapper">
+			
+			<!--#States Tbl-->
+			<table border="0" width="100%" >
+			  <tr>
+				<td style="font-weight:bold;">Total Makes:</td>
+				<td align="left" width="110"><?php echo $this->totalMakes ;?></td>
+				<td style="font-weight:bold;">Total Models:</td>
+				<td align="left" width="110"><?php echo $this->totalModels ;?></td>
+				<td style="font-weight:bold;">Total Year:</td>
+				<td align="left" width="110">5</td>
+			  </tr>
+			</table>
+			<!--$States Tbl-->
+			
+			
+            </div>
+        </div>
+        <div class="option-box-bottom"></div>
+        
+        <br />
+        <div class="option-box-top2"></div>
+        <div class="option-box-middle">
+        	<div class="option-heading ">User Managment Options</div>
+            
+            <!-- #icon-wrapper -->
+            <div class="icon-wrapper">
+                <div class="icons-box">
+                <a href="<?php echo $this->baseUrl() ;?>/user/adminindex" class="icon-text">
+                    <img src="<?php echo $this->baseUrl() ;?>/admin-images/user-icon.png" width="32" height="32">
+                    </a>
+                    <div class="icon-text"><a href="<?php echo $this->baseUrl() ;?>/user/adminindex" class="icon-text">Users</a></div>
+                </div>
+                <div class="icons-box">
+                <a href="<?php echo $this->baseUrl() ;?>/dealerdefaults/edit" class="icon-text">
+                    <img src="<?php echo $this->baseUrl() ;?>/admin-images/permissions-icon.png" width="32" height="32">
+                    </a>
+                    <div class="icon-text"><a href="<?php echo $this->baseUrl() ;?>/dealerdefaults/edit" class="icon-text">My Account</a></div>
+                </div>
+                <div class="icons-box">
+                    <img src="<?php echo $this->baseUrl() ;?>/admin-images/user-settings.png" width="32" height="32">
+                   <div class="icon-text"> Users Settings</div>
+                </div>
+                <div class="icons-box">
+                 <a href="<?php echo $this->baseUrl() ;?>/role" class="icon-text">
+                    <img src="<?php echo $this->baseUrl() ;?>/admin-images/roles-icon.png" width="32" height="32">
+                    </a>
+                   <div class="icon-text"> <a href="<?php echo $this->baseUrl() ;?>/role" class="icon-text">Roles</a></div>
+                </div>
+                <div class="icons-box">
+                <a href="<?php echo $this->baseUrl() ;?>/resource" class="icon-text">
+                    <img src="<?php echo $this->baseUrl() ;?>/admin-images/performance-icon.png" width="32" height="32">
+                    </a>
+                   <div class="icon-text"> <a href="<?php echo $this->baseUrl() ;?>/resource" class="icon-text">AddOnCars Resources</a></div>
+                </div>
+                <div class="icons-box">
+                <a href="<?php echo $this->baseUrl() ;?>/accessrules" class="icon-text">
+                    <img src="<?php echo $this->baseUrl() ;?>/admin-images/access-rules-icon.png" width="32" height="32">
+                    </a>
+                   <div class="icon-text"> <a href="<?php echo $this->baseUrl() ;?>/accessrules" class="icon-text">Access rules</a></div>
+                </div>
+               
+                <div class="clear"></div>
+            </div>
+            <!-- $icon-wrapper -->
+            
+            <div class="option-heading ">Vehicle Options</div>
+            
+                        <!-- #icon-wrapper -->
+            <div class="icon-wrapper">
+                <div class="icons-box">
+                    <a href="<?php echo $this->baseUrl() ;?>/make/adminindex" class="icon-text"><img src="<?php echo $this->baseUrl() ; ?>/images/make.png" width="32" height="32" /></a>
+                    <div class="icon-text"> <a href="<?php echo $this->baseUrl() ;?>/make/adminindex" class="icon-text">Make</a></div>
+                </div>
+                <div class="icons-box">
+                    <a href="<?php echo $this->baseUrl() ;?>/carmodel/adminindex" class="icon-text">
+                    <img src="<?php echo $this->baseUrl() ; ?>/images/models.png" width="32" height="32" />
+                    </a>
+                    <div class="icon-text"><a href="<?php echo $this->baseUrl() ;?>/carmodel/adminindex" class="icon-text">Models</a></div>
+                </div>
+                <div class="icons-box">
+                    <a href="<?php echo $this->baseUrl() ;?>/pricemodifier/index">
+                    <img src="<?php echo $this->baseUrl() ; ?>/images/pricemodifier.png" width="32" height="32" />
+                    </a>
+                    <div class="icon-text"><a href="<?php echo $this->baseUrl() ;?>/pricemodifier/index"  class="icon-text">Price Modifier</a></div>
+                </div>
+                <div class="icons-box">
+                    <a href="<?php echo $this->baseUrl() ;?>/dealerpartcategoriessettings/edit">
+                    <img src="<?php echo $this->baseUrl() ; ?>/images/Category.png" width="32" height="32" />
+                    </a>
+                    <div class="icon-text"><a href="<?php echo $this->baseUrl() ;?>/dealerpartcategoriessettings/edit"  class="icon-text">Category</a></div>
+                </div>
+                <div class="icons-box">
+                    <a href="<?php echo $this->baseUrl() ;?>/dealermanufacturersettings/edit">
+                    <img src="<?php echo $this->baseUrl() ; ?>/images/manufacturer.png" width="32" height="32" />
+                    </a>
+                    <div class="icon-text"><a href="<?php echo $this->baseUrl() ;?>/dealermanufacturersettings/edit"  class="icon-text">Manufacturer</a></div>
+                </div>
+                <div class="icons-box">
+                    <a href="<?php echo $this->baseUrl() ;?>/partexclusion/index">
+                    <img src="<?php echo $this->baseUrl() ; ?>/images/exclusion.png" width="32" height="32" />
+                    </a>
+                    <div class="icon-text"><a href="<?php echo $this->baseUrl() ;?>/dealerpartsettings/index"  class="icon-text">Dealer Part Exclusion</a></div>
+                </div>
+                
+                <div class="clear"></div>
+            </div>
+            <!-- $icon-wrapper -->
+             <!-- $icon-wrapper -->
+            
+            <div class="option-heading ">Order Management</div>
+            
+                        <!-- #icon-wrapper -->
+            <div class="icon-wrapper">
+                <div class="icons-box">
+                <a href="<?php echo $this->baseUrl() ;?>/orders/index" class="icon-text">
+                    <img src="<?php echo $this->baseUrl() ; ?>/images/order.png" width="32" height="32" />
+                    </a>
+                    <div class="icon-text"> <a href="<?php echo $this->baseUrl() ;?>/orders/index" class="icon-text">Orders</a></div>
+                </div>
+               
+                
+                <div class="clear"></div>
+            </div>
+            <!-- $icon-wrapper -->
+            <!-- $icon-wrapper -->
+            
+            <div class="option-heading ">Deal Management</div>
+            
+                        <!-- #icon-wrapper -->
+            <div class="icon-wrapper">
+                <div class="icons-box">
+                    <img src="<?php echo $this->baseUrl() ; ?>/images/deals.png" width="32" height="32" />
+                    <div class="icon-text"> <a href="<?php echo $this->baseUrl() ;?>/deal/adminindex" class="icon-text">Deals</a></div>
+                </div>
+               
+                
+                <div class="clear"></div>
+            </div>
+            <!-- $icon-wrapper -->
+              
+        <!-- $icon-wrapper -->
+            
+            <div class="option-heading ">Reports</div>
+            
+                        <!-- #icon-wrapper -->
+            <div class="icon-wrapper">
+                <div class="icons-box">
+                    <a href="<?php echo $this->baseUrl() ;?>/reports/index" class="icon-text">
+                    <img src="<?php echo $this->baseUrl() ; ?>/images/reporte.png" width="32" height="32" />
+                    </a>
+                    <div class="icon-text"> <a href="<?php echo $this->baseUrl() ;?>/reports/index" class="icon-text">Reports</a></div>
+                </div>
+               
+                
+                <div class="clear"></div>
+            </div>
+            <!-- $icon-wrapper -->
+            
+             <!-- $icon-wrapper -->
+            
+            <div class="option-heading ">Templates</div>
+            
+                        <!-- #icon-wrapper -->
+            <div class="icon-wrapper">
+                <div class="icons-box">
+                <a href="<?php echo $this->baseUrl() ;?>/templetes/index" class="icon-text">
+                    <img src="<?php echo $this->baseUrl() ; ?>/images/template.png" width="32" height="32" />
+                    </a>
+                    <div class="icon-text"> <a href="<?php echo $this->baseUrl() ;?>/templetes/index" class="icon-text">Templates</a></div>
+                </div>
+               
+                
+                <div class="clear"></div>
+            </div>
+            <!-- $icon-wrapper -->
+        </div>
+        <div class="option-box-bottom"></div>
+        
+        <br>
+        <!-- $Contents -->
+        </div>

@@ -1,0 +1,3 @@
+[19-Nov-2010 04:46:13] PHP Fatal error:  Using $this when not in object context in /home/addonca1/public_html/aoc/application/views/scripts/color/index.phtml on line 1
+[07-Jan-2011 01:56:47] PHP Fatal error:  Using $this when not in object context in /home/addonca1/public_html/aoc/application/views/scripts/color/index.phtml on line 1
+[01-Feb-2011 03:59:05] PHP Fatal error:  Using $this when not in object context in /home/addonca1/public_html/aoc/application/views/scripts/color/index.phtml on line 1

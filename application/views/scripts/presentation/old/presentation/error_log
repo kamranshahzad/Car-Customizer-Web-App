@@ -1,0 +1,2 @@
+[19-Nov-2010 04:50:05] PHP Fatal error:  Using $this when not in object context in /home/addonca1/public_html/aoc/application/views/scripts/presentation/index.phtml on line 39
+[28-Jan-2011 21:15:56] PHP Fatal error:  Using $this when not in object context in /home/addonca1/public_html/aoc/application/views/scripts/presentation/index.phtml on line 51

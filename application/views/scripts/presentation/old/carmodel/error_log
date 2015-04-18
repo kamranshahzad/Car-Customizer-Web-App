@@ -1,0 +1,2 @@
+[19-Nov-2010 04:51:39] PHP Fatal error:  Using $this when not in object context in /home/addonca1/public_html/aoc/application/views/scripts/carmodel/index.phtml on line 3
+[14-Jan-2011 07:55:56] PHP Fatal error:  Using $this when not in object context in /home/addonca1/public_html/aoc/application/views/scripts/carmodel/index.phtml on line 3

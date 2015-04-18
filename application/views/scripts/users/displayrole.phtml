@@ -1,0 +1,46 @@
+      <div class="adpage-title">
+        <div class="title" >User Roles Listing</div>
+      </div>
+      <div class="user-strip">
+			<?php echo $this->links; ?>
+        <div class="clear"></div>
+        <div style="margin-top:12px;margin-bottom:15px;">
+        	<?php echo $this->addOption; ?>
+        </div>
+        <div class="clear"></div>
+      </div>
+      
+      <!--#quick links-->
+      <div class="option-box-top">
+        <div class="heading">&nbsp;&nbsp;&nbsp;USER ROLES</div>
+      </div>
+      <div class="option-box-middle">
+        <div class="quick-links-wrapper">
+          <div id="navcontainer">
+           
+          		<?php if (count($this->messages)) : ?>
+                 <br/>
+                <div class="errorMSG-autoh">
+                	<ul id="messages">
+                    	<?php foreach ($this->messages as $message) : ?>
+                            <li><?php echo $this->escape($message); ?></li>
+                        <?php endforeach; ?>
+                	</ul>
+                </div>
+                <?php endif; ?>
+                		
+          	<br/>
+            <div class="modelListContainer">
+             	<?php 
+					echo $this->roleGrid;
+				?>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="option-box-bottom"></div>
+      <br />
+      <!--$quick links--> 
+      <br />
+      <!-- $Contents --> 

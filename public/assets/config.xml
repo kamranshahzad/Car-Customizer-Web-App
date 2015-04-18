@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<option id="1">http://localhost/addoncars/</option>
+	<option id="2">assets/</option>
+	<option id="3">foldernames</option>
+</config>

@@ -1,0 +1,35 @@
+      <div class="adpage-title">
+        <div class="title" >Order Listing</div>
+      </div>
+      <div class="user-strip">
+			<?php echo $this->links; ?>
+        <div class="clear"></div>
+        <div style="margin-top:12px;margin-bottom:15px;">
+        	<?php echo $this->addOption; ?>
+        </div>
+        <div class="clear"></div>
+      </div>
+      
+      
+	 <?php if (count($this->messages)) : ?>
+       <br/>
+      <div class="errorMSG-autoh">
+          <ul id="messages">
+              <?php foreach ($this->messages as $message) : ?>
+                  <li><?php echo $this->escape($message); ?></li>
+              <?php endforeach; ?>
+          </ul>
+      </div>
+      <?php endif; ?>
+                
+                
+      <!--#quick links-->
+      <?php 
+	  				echo $this->form;
+					echo '<br/>';			
+					echo $this->pendingOrderGrid;
+					echo '<br/>';
+					echo $this->completeOrderGrid;
+	  ?>
+      <br/>
+

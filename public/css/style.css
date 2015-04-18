@@ -1,0 +1,808 @@
+/* ---- Standard Tags ---- */
+body
+	{	font-family:Arial, Helvetica, sans-serif;
+		background:#cfcfd0 url(../images/body-bg.jpg) repeat-x 0px 25px;
+		padding:0px;
+		margin:0px;
+		line-height:normal;
+	}
+
+img{ border:none; outline:none;}
+a{	text-decoration:none;}
+h1, h2, h3, h4, h5, h6, p, ul, li, ol,table, td, th, div{  margin:0px; padding:0px; line-height:normal;  font-weight:normal; list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-family:Arial, Helvetica, sans-serif; font-style:normal; font-weight:normal;  }
+blockquote { padding:0px; margin:0px; padding-left:20px; }
+hr{ background:#d5d5d5; color:#d5d5d5;  border:none; height:1px; }
+p{ line-height:18px; }
+
+/* ---- Heading Tags ---- */
+h1{ font-size:26px; } h2{ font-size:24px; } h3{ font-size:20px; } h4{ font-size:18px; } h5{ font-size:16px; } h6{ font-size:14px; } 
+
+/* ---- Fonts Tags ---- */
+.txt-12-grey{ font-size:12px; color:#323232; }
+	.txt-12-grey a{ color:#c00000; }
+		.txt-12-grey a:hover{ text-decoration:underline; }
+		
+/* --Colors--  
+/ grey=#323232; red=#c00000; lgrey=#5e5d5d; */
+
+.grey, .grey a{ color:#666666; } .grey a:hover{ text-decoration:underline; }
+.lgrey, .lgrey a{ color:#c0c0c0; } .lgrey a:hover{ text-decoration:underline; }
+.red, .red a{ color:#ca0000; } .red a:hover{ text-decoration:underline; }
+.black, .black a{ color:#000; } .black a:hover{ text-decoration:underline; }
+		
+/* Design + HomePage CSS ----------------------------------------------------------------------------------------------------*/
+.header{ background:url(../images/top-header-bg.jpg) repeat-x;  }
+.header .headerMain{ width:374px; height:67px; background:url(../images/add-on-car-header.jpg) no-repeat; margin:0px auto; text-align:center; }
+.header .headerMainIndex{ width:647px; height:67px; background:url(../images/header-main.jpg) no-repeat; margin:0px auto; text-align:center; }
+.header .headerMainIndex .logolink{ width:277px; padding:10px 25px 0px 20px; height:50px; }
+.header .headerMainIndex .loginCon{ width:297px; padding:29px 20px 0px 0px; }
+.logininput{ width:107px; height:21px; background:url(../images/top-inputfield.gif) no-repeat; padding:0px; margin-right:5px; *margin-right:3px; }
+.logininput input{ width:100px; height:18px; margin:3px; *margin:0px 3px 3px 3px; *line-height: 14px; background:none; border:none; font-size:9px; color:#000; }/*text-transform:uppercase;*/
+
+.mainNavCon{ width:697px; margin-top:40px; margin:40px auto 55px auto; }/* 897 */
+.mainNavCon .colL{ width:509px; height:41px; background:url(../images/nav-grey-bg.gif) repeat-x; } /* 709 */
+	.mainNavCon .colL ul{ }
+	.mainNavCon .colL li{ float:left; font-size:12px; line-height:41px;  font-family:Arial, Helvetica, sans-serif;}
+	.mainNavCon .colL li a{ display:block; padding-left:25px; padding-right:25px;  color:#FFF; text-transform:uppercase;  font-weight:normal; text-shadow:#61615c 1px 1px 1px; }
+	.mainNavCon .colL li a:hover{ background:url(../images/nav-red-bg.gif) repeat-x; }
+	a.navActive{ background:url(../images/nav-red-bg.gif) repeat-x; }
+	
+.mainNavCon .colR{ width:188px; height:41px; background:url(../images/dealers-join-now.jpg); font-family:Arial, Helvetica, sans-serif; font-style:normal; }
+	.mainNavCon .colR a{ font-size:12px; line-height:41px; color:#FFFFFF; padding-left:50px; text-transform:uppercase; text-shadow:#61615c 1px 1px 1px; }
+
+.wrapper{ width:940px; margin:0px auto; }
+.wrapper .bodyTagline{ width:516px; height:69px; margin:0px auto 25px auto;  }
+.wrapper .colL{ width:406px; height:207px; padding-top:140px; float:left; }
+.wrapper .colR{ width:453px; height:299px; float:right; background:url(../images/mani-txt-bg.png) no-repeat; padding:25px 18px 25px 25px; }
+
+/* Footer CSS ----------------------------------------------------------------------------------------------------*/
+.footer{ width:940px; border-top:1px solid #d5d5d5; height:90px; margin:55px auto 0px auto; font-size:10px; color:#5e5d5d; text-align:center; text-transform:uppercase; padding-top:30px;  font-family:Arial, Helvetica, sans-serif; }
+.footer a{ color:#000000; }
+.footer a:hover{ color:#c00000; }
+
+/* Inner pages CSS ----------------------------------------------------------------------------------------------------*/
+.red15
+{
+font:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+color:#c21010;
+margin:2px;
+}
+
+.red15 a
+{
+font:Arial, Helvetica, sans-serif;
+font-size:15px;
+font-weight:bold;
+color:#c21010;
+}
+
+.red15 a:hover
+{
+font:Arial, Helvetica, sans-serif;
+font-size:15px;
+font-weight:bold;
+color:#c21010;
+text-decoration:underline;
+}
+
+
+.arial-12-black
+{
+font:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#000;
+}
+
+
+.arial-11-black
+{
+font:Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#000;
+}
+
+.arial-22-black
+{
+font:Arial, Helvetica, sans-serif;
+font-size:22px;
+color:#000;
+}
+.arial-12-white
+{
+	font-size:12px;
+	color:#FFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.blck15
+{
+font:Arial, Helvetica, sans-serif;
+font-size:15px;
+font-weight:bold;
+color:#000;
+}
+
+.textfield
+{
+width:248px;
+height:33px;
+background: url(../images/configuration-page-images/textfield-image.png) top center no-repeat;
+margin: 0px 0px 0px 10px;
+float:left;
+}
+
+	.textfield .input
+	{
+	width:200px;
+	height:20px;
+	background:none;
+	border:none;
+	float:left;
+	line-height:normal;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#4d4d4d;
+	padding:10px 0px 0px 10px;
+		}
+
+/* Login page CSS ----------------------------------------------------------------------------------------------------*/
+
+.boxContainer
+{
+	width:475px;
+	margin:0 auto;
+}
+
+	.boxContainer .top
+	{
+		background:url(../images/login-images/login-top.png) left top no-repeat;
+		height:52px;
+	}
+	
+		.boxContainer .top .txt
+		{
+			font-size:12px;
+			font-family:Arial, Helvetica, sans-serif;
+			color:#000;
+			text-align:right;
+			padding-top:18px;
+			padding-right:30px;
+		}
+	
+	.boxContainer .bottom
+	{
+		background:url(../images/login-images/login-bottom.png) top center no-repeat;
+		height:200px;
+	}
+		
+		.boxContainer .bottom .formContainer
+		{
+			width:318px;
+			margin:0 auto;
+			padding-top:15px;
+		}
+		
+			.boxContainer .bottom .formContainer .fieldContainer
+			{
+				margin-bottom:20px;
+			}
+			
+				.boxContainer .bottom .formContainer .fieldContainer .text
+				{
+					float:left;
+					font-size:12px;
+					color:#000;
+					line-height:33px;
+				}
+				
+				.boxContainer .bottom .formContainer .fieldContainer .field
+				{
+					float:right;
+					width:248px;
+					height:33px;
+					background: url(../images/configuration-page-images/textfield-image.png) top center no-repeat;
+				}
+				
+					.boxContainer .bottom .formContainer .fieldContainer .field input
+						{
+						width:200px;
+						height:20px;
+						background:none;
+						border:none;
+						float:left;
+						line-height:normal;
+						font-size:11px;
+						font-family:Arial, Helvetica, sans-serif;
+						color:#4d4d4d;
+						padding:10px 0px 0px 10px;
+							}
+
+			.boxContainer .bottom .formContainer .btn
+			{
+				text-align:right;
+			}
+
+/* Make page CSS ----------------------------------------------------------------------------------------------------*/
+
+.makeContainer
+{
+	width:901px;
+	margin:0 auto;
+}
+
+	.makeContainer .top
+	{
+	}
+
+	.makeContainer .mid
+	{
+		background:url(../images/car-color-option-images/mid.png) top center repeat-y;
+	}
+	
+		.makeContainer .mid .midContainer
+		{
+			width:825px;
+			margin:0 auto;
+			padding-top:25px;
+		}
+		
+			.makeContainer .mid .midContainer .topheading
+			{
+				padding-bottom:20px;
+				border-bottom:1px solid #E5E5E5;
+			}
+			
+				.makeContainer .mid .midContainer .topheading .leftheading
+				{
+					float:left;
+				}
+				
+				.makeContainer .mid .midContainer .topheading .rightlink, .makeContainer .mid .midContainer .topheading .rightlink a
+				{
+					float:right;
+					font:Arial, Helvetica, sans-serif;
+					font-size:15px;
+					font-weight:bold;
+					color:#c21010;
+										
+				}
+				
+				.makeContainer .mid .midContainer .topheading .rightlink a:hover
+				
+				{
+					font:Arial, Helvetica, sans-serif;
+					font-size:15px;
+					font-weight:bold;
+					color:#c21010;
+					text-decoration:underline;
+				}			
+
+			
+			.makeContainer .mid .midContainer .contenContainer
+			{
+				padding-top:20px;
+			}
+			
+				.makeContainer .mid .midContainer .contenContainer .txt
+				{
+					font-size:12px;
+					
+				}
+				
+				.makeContainer .mid .midContainer .contenContainer .logoContainer
+				{
+					padding-top:90px;
+					padding-bottom:90px;
+				}
+				
+				.makeContainer .mid .midContainer .contenContainer .logoContainer .Hlogo
+				{
+					width:115px;
+					margin-left:10px;
+					float:left;
+				}
+
+
+					.makeContainer .mid .midContainer .contenContainer .logoContainer .Hlogo .top
+					{
+					}
+
+					.makeContainer .mid .midContainer .contenContainer .logoContainer .Hlogo .bottom
+					{
+						background:url(../images/make-page-images/honda-botom.png) top center no-repeat;
+						height:30px;
+						font-size:12px;
+						color:#fff;
+						text-align:center;
+						line-height:30px;
+					}
+
+	.makeContainer .bottom
+	{
+	}
+
+/* Model page CSS ----------------------------------------------------------------------------------------------------*/
+
+.modelContainer
+{
+	width:901px;
+	margin:0 auto;
+}
+
+	.modelContainer .top
+	{
+	}
+
+	.modelContainer .mid
+	{
+		background:url(../images/car-color-option-images/mid.png) top center repeat-y;
+	}
+	
+		.modelContainer .mid .midContainer
+		{
+			width:825px;
+			margin:0 auto;
+			padding-top:25px;
+		}
+		
+			.modelContainer .mid .midContainer .topheading
+			{
+				padding-bottom:20px;
+				border-bottom:1px solid #E5E5E5;
+			}
+			
+				.modelContainer .mid .midContainer .topheading .leftheading
+				{
+					float:left;
+				}
+				
+				.modelContainer .mid .midContainer .topheading .rightlink, .makeContainer .mid .midContainer .topheading .rightlink a
+				{
+					float:right;
+					font:Arial, Helvetica, sans-serif;
+					font-size:15px;
+					font-weight:bold;
+					color:#c21010;
+										
+				}
+				
+				.modelContainer .mid .midContainer .topheading .rightlink a:hover
+				
+				{
+					font:Arial, Helvetica, sans-serif;
+					font-size:15px;
+					font-weight:bold;
+					color:#c21010;
+					text-decoration:underline;
+				}			
+
+			
+			.modelContainer .mid .midContainer .contenContainer
+			{
+				padding-top:20px;
+			}
+			
+			
+				.modelContainer .mid .midContainer .contenContainer .logobar
+				{
+					padding-bottom:40px;
+				}
+				
+					.modelContainer .mid .midContainer .contenContainer .logobar .logo
+					{
+						float:left;
+						width:71px;
+						padding-right:33px;
+						border-right:1px solid #e5e5e5;
+					}
+					
+					.modelContainer .mid .midContainer .contenContainer .logobar .txt
+					{
+						float:left;
+						padding-left:33px;
+						line-height:45px;
+						font-size:12px;
+					}
+				
+				
+				.modelContainer .mid .midContainer .contenContainer .modelListContainer
+				{
+				}
+				
+					.modelContainer .mid .midContainer .contenContainer .modelListContainer ul
+					{
+						padding:0px;
+						margin:0px;
+						list-style:none;
+						text-align:center;
+					}
+					
+					.modelContainer .mid .midContainer .contenContainer .modelListContainer li
+					{
+						float:left;
+						margin-right:18px;
+						margin-bottom:20px;
+					}
+					
+						.modelContainer .mid .midContainer .contenContainer .modelListContainer .marginright
+						{
+							margin-right:0px;
+						}
+					
+						.modelContainer .mid .midContainer .contenContainer .modelListContainer li .modelbox
+						{
+							width:147px;
+						}
+						
+							.modelContainer .mid .midContainer .contenContainer .modelListContainer li .modelbox .top
+							{
+							}
+							
+							.modelContainer .mid .midContainer .contenContainer .modelListContainer li .modelbox .bottom
+							{
+								background:url(../images/model-images/car-bottom.png) top center no-repeat;
+								width:147px;
+								height:30px;
+								font-size:12px;
+								color:#fff;
+								line-height:30px;
+								text-align:center;
+							}
+
+
+	.modelContainer .bottom
+	{
+	}
+
+
+/* Config page CSS ----------------------------------------------------------------------------------------------------*/
+
+.ConfigContainer
+{
+	width:901px;
+	margin:0 auto;
+}
+
+	.ConfigContainer .top
+	{
+	}
+
+	.ConfigContainer .mid
+	{
+		background:url(../images/car-color-option-images/mid.png) top center repeat-y;
+	}
+	
+		.ConfigContainer .mid .midContainer
+		{
+			width:825px;
+			margin:0 auto;
+			padding-top:25px;
+		}
+		
+			.ConfigContainer .mid .midContainer .topheading
+			{
+				padding-bottom:20px;
+				border-bottom:1px solid #E5E5E5;
+			}
+			
+				.ConfigContainer .mid .midContainer .topheading .leftheading
+				{
+					
+				}
+				
+			
+			.ConfigContainer .mid .midContainer .contenContainer
+			{
+				padding-top:20px;
+				padding-bottom:50px;
+			}
+			
+				.ConfigContainer .mid .midContainer .contenContainer .left
+				{
+					width:250px;
+					padding-right:37px;
+					
+					float:left;
+				}
+				
+					.ConfigContainer .mid .midContainer .contenContainer .left .head
+					{
+						font-size:22px;
+						text-align:right;
+						padding-bottom:15px;
+					}
+					
+					.ConfigContainer .mid .midContainer .contenContainer .left .btn
+					{
+						text-align:right;
+					}
+				
+				.ConfigContainer .mid .midContainer .contenContainer .right
+				{
+					width:360px;
+					padding-left:37px;
+					float:left;
+					border-left:1px solid #e5e5e5;
+				}
+			
+					.ConfigContainer .mid .midContainer .contenContainer .right .head
+					{
+						font-size:22px;
+						padding-bottom:15px;
+					}
+				
+						.ConfigContainer .mid .midContainer .contenContainer .right  .formContainer
+						{
+
+
+						}
+						
+							.ConfigContainer .mid .midContainer .contenContainer .right  .formContainer .fieldContainer
+							{
+								margin-bottom:20px;
+							}
+							
+								.ConfigContainer .mid .midContainer .contenContainer .right  .formContainer .fieldContainer .text
+								{
+									float:left;
+									font-size:12px;
+									color:#000;
+									line-height:33px;
+								}
+								
+								.ConfigContainer .mid .midContainer .contenContainer .right  .formContainer .fieldContainer .field
+								{
+									float:right;
+									width:248px;
+									height:33px;
+									background: url(../images/configuration-page-images/textfield-image.png) top center no-repeat;
+								}			
+
+
+								.ConfigContainer .mid .midContainer .contenContainer .right  .formContainer .fieldContainer .field input
+									{
+									width:200px;
+									height:20px;
+									background:none;
+									border:none;
+									float:left;
+									line-height:normal;
+									font-size:12px;
+									font-family:Arial, Helvetica, sans-serif;
+									color:#4d4d4d;
+									padding:10px 0px 0px 10px;
+										}
+
+							.ConfigContainer .mid .midContainer .contenContainer .right .formContainer .btn
+							{
+								text-align:right;
+							}
+
+	.ConfigContainer .bottom
+	{
+	}
+
+/* Color option page CSS ----------------------------------------------------------------------------------------------------*/
+
+.colorContainer
+{
+	width:901px;
+	margin:0 auto;
+}
+
+	.colorContainer .top
+	{
+	}
+
+	.colorContainer .mid
+	{
+		background:url(../images/car-color-option-images/mid.png) top center repeat-y;
+	}
+	
+		.colorContainer .mid .midContainer
+		{
+			width:825px;
+			margin:0 auto;
+			padding-top:25px;
+		}
+		
+			.colorContainer .mid .midContainer .topheading
+			{
+				padding-bottom:20px;
+				border-bottom:1px solid #E5E5E5;
+			}
+			
+				.colorContainer .mid .midContainer .topheading .leftheading
+				{
+					float:left;
+				}
+				
+				.colorContainer .mid .midContainer .topheading .rightlink, .makeContainer .mid .midContainer .topheading .rightlink a
+				{
+					float:right;
+					font:Arial, Helvetica, sans-serif;
+					font-size:15px;
+					font-weight:bold;
+					color:#c21010;
+										
+				}
+				
+				.colorContainer .mid .midContainer .topheading .rightlink a:hover
+				
+				{
+					font:Arial, Helvetica, sans-serif;
+					font-size:15px;
+					font-weight:bold;
+					color:#c21010;
+					text-decoration:underline;
+				}			
+
+			
+			.colorContainer .mid .midContainer .contenContainer
+			{
+				padding-top:20px;
+			}
+			
+			
+				.colorContainer .mid .midContainer .contenContainer .logobar
+				{
+					padding-bottom:80px;
+				}
+				
+					.colorContainer .mid .midContainer .contenContainer .logobar .logo
+					{
+						float:left;
+						width:71px;
+						padding-right:33px;
+						border-right:1px solid #e5e5e5;
+					}
+					
+					.colorContainer .mid .midContainer .contenContainer .logobar .make
+					{
+						float:left;
+						padding-left:33px;
+						line-height:45px;
+						font-size:12px;
+						padding-right:33px;
+						
+					}
+
+					.colorContainer .mid .midContainer .contenContainer .logobar .name
+					{
+						float:left;
+						padding-left:33px;
+						line-height:45px;
+						font-size:12px;
+						border-left:1px solid #e5e5e5;
+						padding-right:33px;
+					}
+
+					.colorContainer .mid .midContainer .contenContainer .logobar .trim
+					{
+						float:left;
+						padding-left:33px;
+						line-height:45px;
+						font-size:12px;
+						border-left:1px solid #e5e5e5;
+					}
+			
+			.colorContainer .mid .midContainer .contenContainer .bottomContainer
+			{
+			}
+			
+				.colorContainer .mid .midContainer .contenContainer .bottomContainer .left
+				{
+					width:200px;
+					padding-right:26px;
+					border-right:1px solid #e5e5e5;
+					float:left;
+				}
+				
+					.colorContainer .mid .midContainer .contenContainer .bottomContainer .left .head
+					{
+						font-size:15px;
+						font-weight:bold;
+						padding-bottom:15px;
+					}
+					
+					.colorContainer .mid .midContainer .contenContainer .bottomContainer .left .colorselection
+					{
+						padding-bottom:2px;
+					}
+					
+						.colorContainer .mid .midContainer .contenContainer .bottomContainer .left .colorselection .radiobtn
+						{
+							width:22px;
+							float:left;
+							padding-left:5px;
+						}
+						
+						.colorContainer .mid .midContainer .contenContainer .bottomContainer .left .colorselection .color
+						{
+							width:47px;
+							float:left;
+						}
+						
+						.colorContainer .mid .midContainer .contenContainer .bottomContainer .left .colorselection .name
+						{
+							width:119px;
+							float:left;
+							font-size:11px;
+						}
+					
+					
+				
+				.colorContainer .mid .midContainer .contenContainer .bottomContainer .right
+				{
+					width:250px;
+					padding-left:26px;
+					float:left;
+				}
+	
+					.colorContainer .mid .midContainer .contenContainer .bottomContainer .right .head
+					{
+						font-size:15px;
+						font-weight:bold;
+						padding-bottom:15px;
+					}
+					
+						.colorContainer .mid .midContainer .contenContainer .bottomContainer .right .container
+						{
+						}
+						
+							.colorContainer .mid .midContainer .contenContainer .bottomContainer .right .container .leftbox
+							{
+								width:100px;
+								float:left;
+								margin-right:20px;
+							}
+							
+								.colorContainer .mid .midContainer .contenContainer .bottomContainer .right .container .leftbox .top
+								{
+								}
+								
+								.colorContainer .mid .midContainer .contenContainer .bottomContainer .right .container .leftbox .bottom
+								{
+									padding-top:10px;
+									font-size:11px;
+								}
+							
+							.colorContainer .mid .midContainer .contenContainer .bottomContainer .right .container .rightbox
+							{
+							
+								width:100px;
+								float:left;
+								margin-left:20px;
+							}
+
+								.colorContainer .mid .midContainer .contenContainer .bottomContainer .right .container .rightbox .top
+								{
+								}
+								
+								.colorContainer .mid .midContainer .contenContainer .bottomContainer .right .container .rightbox .bottom
+								{
+									padding-top:10px;
+									font-size:11px;
+								}
+
+
+	.colorContainer .bottom
+	{
+	}
+
+
+
+/* basic CSS ----------------------------------------------------------------------------------------------------*/
+.pad30{ padding:30px; }
+.lh{ line-height:24px;}
+.mar55B{ margin-bottom:55px; }
+.nomar{ margin:0px; }
+.Fl{ float:left; }
+.Fr{ float:right; }
+
+.clear{	clear:both;	}

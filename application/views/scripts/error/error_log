@@ -1,0 +1,1 @@
+[19-Nov-2010 09:36:04] PHP Fatal error:  Using $this when not in object context in /home/addonca1/public_html/aoc/application/views/scripts/error/error.phtml on line 9

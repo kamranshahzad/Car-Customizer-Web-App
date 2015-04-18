@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <?php
+    echo $this->headTitle();
+    echo $this->headScript()->appendFile($this->baseUrl().'/js/iepngfix_tilebg.js');
+	echo $this->headScript()->appendFile($this->baseUrl().'/js/flexcroll.js');
+	echo $this->headScript()->appendFile($this->baseUrl().'/js/aoc_popupwindow.js');
+   
+    echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/style.css');
+	echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/style-02.css');
+	echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/flexcrollstyles.css');
+	echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/aoc_popup_css.css');
+    ?>
+<style type="text/css">
+img, div, td, input, textarea, li{ behavior: url(iepngfix.htc) }
+
+#scrollArea {
+	/* Typical fixed height and fixed width example */
+	height: 300px;
+	overflow: auto;
+	position: relative;
+	padding:0px;
+	outline:none;
+}
+</style>
+
+
+<body>
+
+	<?php echo $this->render('index_header.phtml') ?>
+	
+	<div class="wrapper mar55B">
+	
+		
+		
+			
+			<?php echo $this->layout()->content; ?>
+			
+		
+		
+		
+		<div class="clear"></div>
+	</div><!--wrapper-->
+	
+	<?php echo $this->render('index_footer.phtml'); ?>
+<!--footer-->
+	
+
+</body>
+</html>

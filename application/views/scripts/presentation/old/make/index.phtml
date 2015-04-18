@@ -1,0 +1,56 @@
+<div class="popup" id="menu1"  style="display:none;" ></div>
+<div class="makeContainer">
+	<div class="top"><img src="<?php echo $this->baseUrl() ; ?>/images/car-color-option-images/top.png" width="901" height="5" alt="" /></div>
+	<div class="mid">
+	<div class="midContainer">
+	<div class="topheading">
+	<div class="leftheading"><img src="<?php echo $this->baseUrl() ; ?>/images/make-page-images/heading.png" width="175" height="17" /></div>
+	<div class="rightlink"><a href="<?php echo $this->baseUrl() ; ?>/home">&lt;Start Over</a></div>
+	<div class="clear"></div>
+	</div>
+	<div class="contenContainer">
+	<div class="txt">Place your mouse over the manufacturer logos below to select the desired make and year</div>
+	<div class="logoContainer">
+
+	<?php foreach ($this->makes as $entry): ?>
+                    
+                    <div class="popup" id="<?php echo $this->escape($entry->getMakeId()) ?>"  style="display:none;" >
+                      <table width="100" topmargin="0"  border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td colspan="2" valign="top"><span class="style3">Select Year</span></td>
+                          <td align="right" valign="top"><img src="<?php echo $this->baseUrl() ; ?>/images/Button-Close_32.png" border="0"  width="10" height="10" onclick="hide_menu('menu1');" ></td>
+                        </tr>
+                        <!--years loop start-->
+                        <?php foreach ($this->years as $year): ?>
+                        <tr>
+                          <td width="30">&nbsp;</td>
+                         
+                          
+                          
+                           <td align="left"><a href="<?php echo $this->baseUrl(); ?>/carmodel/index/makeId/<?php echo $this->escape($entry->getMakeId()); ?>/yearId/<?php echo $this->escape($year->getYearId());?>/year/<?php echo $this->escape($year->getYear());?>/makeIcon/<?php echo $this->escape($entry->getMakeIcon());?>" class="arial-12-black"> <?php echo $this->escape($year->getYear()) ?> </a></td>
+                           
+                           
+                          <td>&nbsp;</td>
+                        </tr>
+                        <?php endforeach ?>
+                        <!--years loop end-->
+                      </table>
+                    </div>
+
+
+	<div class="Hlogo">
+	<div class="top"><a href="#" onmouseover="display_menu(this,'<?php echo $this->escape($entry->getMakeId()) ?>');"><img src="<?php echo $this->baseUrl() ; ?>/assets/makes/<?php echo $this->escape($entry->getMakeIcon()) ?>" width="115" height="115" /></a></div>
+	<div class="bottom">Select Model</div>
+	</div>
+    
+    
+     <?php endforeach ?>
+     <div class="clear"></div>
+    
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="bottom"><img src="<?php echo $this->baseUrl() ; ?>/images/car-color-option-images/bottom.png" width="901" height="6" alt="" /></div>
+	
+	</div>

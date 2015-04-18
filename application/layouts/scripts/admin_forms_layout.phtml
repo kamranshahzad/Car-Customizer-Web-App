@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <?php
+   	echo $this->headTitle();
+	
+	echo $this->headScript()->appendFile($this->baseUrl().'/js/jquery-1.4.2.min.js');
+	
+    echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/style.css');
+	echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/style-02.css');
+	
+    ?>
+</head>
+<body>
+	<?php echo $this->render('admin_header.phtml') ?>
+	<div class="wrapper mar55B">
+    <div class="colorContainer">
+	<div class="top"><img src="<?php echo $this->baseUrl() ; ?>/images/car-color-option-images/top.png" width="901" height="5" alt="" /></div>
+	<div class="mid">
+    	<div class="ad-midContainer"> 
+        	<?php 
+				echo $this->layout()->content; 
+			?>
+        </div>
+	</div>
+	<div class="bottom"><img src="<?php echo $this->baseUrl() ; ?>/images/car-color-option-images/bottom.png" width="901" height="6" alt="" /></div>	
+	</div>
+	  <div class="clear"></div>
+	</div>	
+	<?php echo $this->render('admin_footer.phtml'); ?>
+</body>
+</html>

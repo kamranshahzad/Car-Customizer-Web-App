@@ -1,0 +1,74 @@
+<div class="colorContainer">
+	<div class="top"><img src="<?php echo $this->baseUrl() ;?>/images/car-color-option-images/top.png" width="901" height="5" alt="" /></div>
+	<div class="mid">
+        <div class="ad-midContainer">
+        <!-- #Contents -->
+        
+       	<div class="adpage-title">
+        	<div class="title" >Makes List</div>
+        </div>
+        
+        <div class="user-strip">
+        	<div class="user-name">
+           	 	<a href="<?php echo $this->baseUrl() ;?>/main/">Dashboard</a>
+            </div>
+            <div class="logout"><a href="<?php echo $this->baseUrl() ;?>/admin/logout">Logout</a></div>
+            <div class="clear"></div>
+			
+			
+			<div style="margin-top:12px;margin-bottom:15px;"><a href="<?php echo $this->baseUrl() ;?>/make/add/" class="hyperlinkBtn Fr">ADD MAKE</a></div>
+			<div class="clear"></div>
+        </div>
+
+		
+        <!--#quick links-->
+        <div class="option-box-top">
+        	<div class="heading">LIST VEHICLE MAKES</div>
+        </div>
+        <div class="option-box-middle">
+			<div class="quick-links-wrapper">
+             	<div id="navcontainer">
+                  
+				<br/>
+                <?php if (count($this->messages)) : ?>
+                <div class="errorMSG-autoh">
+                	<ul id="messages">
+                    	<?php foreach ($this->messages as $message) : ?>
+                            <li><?php echo $this->escape($message); ?></li>
+                        <?php endforeach; ?>
+                </ul>
+                </div>
+                <?php endif; ?>
+
+				<table width="100%" border="0" cellspacing="0" cellpadding="8" class="userTblCls">
+                  <tr>
+                    <td width="250" class="contactDeptHeading">MAKE NAME</td>
+                    <td width="250" class="contactDeptHeading">MAKE ICON</td>
+                    <td width="100" class="contactDeptHeading">&nbsp;&nbsp;&nbsp;OPTIONS</td>
+                  </tr>
+				  <?php foreach ($this->makes as $make): ?>
+                  <tr>
+                    <td class="userTblTd"><?php echo $make->getMakeName() ;?></td>
+                    <td class="userTblTd"><?php echo $make->getMakeIcon() ;?></td>
+                    <td class="userTblTd"><a href="<?php echo $this->baseUrl() ;?>/make/edit/id/<?php echo $make->getMakeId() ;?>">EDIT</a>&nbsp;|&nbsp;<a href="<?php echo $this->baseUrl() ;?>/make/delete/id/<?php echo $make->getMakeId() ;?>">DELETE</a></td>
+                  </tr>
+                  <?php endforeach ?>
+                </table> 
+				
+				
+				<div class="clear"></div>
+				</div>   
+            </div>
+        </div>
+        <div class="option-box-bottom"></div>
+        <br />
+        <!--$quick links-->
+        
+        <!--#form --><!--$form-->
+        
+        <br />
+        <!-- $Contents -->
+        </div>
+	</div>
+	</div>
+              

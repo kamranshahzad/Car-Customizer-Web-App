@@ -1,0 +1,45 @@
+<form action="<?php echo $this->form->getAction(); ?>" enctype="<?php echo $this->form->getEnctype(); ?>" method="<?php echo $this->form->getMethod(); ?>" id="<?php echo $this->form->getAttrib('id'); ?>" name="<?php echo $this->form->getName(); ?>">
+<div class="boxContainer">
+	<div class="top">
+	<div class="txt">Please login to begin your session. </div>
+	</div>
+	<div class="bottom">
+	<div class="formContainer">
+    <div class="errorMSG">
+    <?php
+			  $msg	=	$this->form->getMessages();
+			  foreach($msg as $elemName=>$messages) {
+				  foreach($messages as $message) {					  
+					  echo $this->escape($message).'<br/>';
+					  }
+			}
+			  
+			   ?>
+                <?php echo $this->loginMessage; ?>
+    </div>
+	<div class="fieldContainer">
+	<div class="text">Username:</div>
+	<div class="field">
+	  <label>
+	  <?php echo $this->form->username; ?>
+	  </label>
+	</div>
+	<div class="clear"></div>
+	</div>
+	<div class="fieldContainer">
+	<div class="text">Password:</div>
+	<div class="field">
+	  <label>
+	  <?php echo $this->form->password; ?>
+	  </label>
+	</div>
+	<div class="clear"></div>
+	</div>
+	<div class="btn"><?php echo $this->form->submit; ?></div>
+	</div>
+	</div>
+	<div class="clear"></div>	
+	</div>
+    
+    <div class="clear"></div>
+    </form>

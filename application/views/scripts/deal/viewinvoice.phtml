@@ -1,0 +1,208 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+
+<title>Receipt</title>
+
+<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl() ;?>/css/invoice.css">
+<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl() ;?>/css/style-02.css">
+
+<style type="text/css">
+<!--
+#loanFigures {
+	display: block;
+}
+#leaseFigures {
+	display: none;
+}
+-->
+</style>
+
+
+</head><body>
+
+<div align="center">
+<div id="page">
+
+<div id="content">
+  <div align="right">
+    <table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td rowspan="4" valign="top"><img src="<?php echo $this->baseUrl() ;?>/assets/dealerlogo/<?php echo $this->dealerLogo ;?>"></td>
+        <td class="dealer-name-invoice"><?php echo $this->dealerName ;?></td>
+        <td rowspan="4"><img src="<?php echo $this->baseUrl() ;?>/assets/makes/<?php echo $this->makeIcon ;?>" height="60" width="60"></td>
+        </tr>
+      <tr>
+        <td class="dealer-street-address-invoice"><?php echo $this->dealerStreetAddress ;?></td>
+        
+        </tr>
+      <tr>
+        <td class="dealer-street-address-invoice"><?php echo $this->dealerCity.', '.$this->dealerState.', '.$this->dealerZip ;?></td>
+        </tr>
+      <tr>
+        <td class="dealer-sales-phone-invoice">Sales : <?php echo $this->dealerPhone ;?></td>
+        </tr>
+    </table>
+    </div>
+  <form name="formEdit" action="admin/orderdetails.asp?action=UpdateStatus" method="post">
+  
+
+      <table width="100%" border="0" cellpadding="1" cellspacing="0">
+	  <tbody><tr>
+		<td valign="top" width="8%" align="left">
+			<h2>Ref No: </h2>
+		</td>
+		<td valign="top" width="52%" align="left">
+			<h2 style="color: rgb(222, 13, 18);"><b><?php echo $this->refNo ;?></b></h2>
+		</td>
+		
+			<td valign="top" width="13%" align="left">
+				<h2>Sales Person: </h2>
+			</td>
+			<td valign="top" align="left">
+				<h2 style="color: rgb(222, 13, 18);"><b>&nbsp;<?php echo $this->spFirstName.' '.$this->spLastName ;?></b></h2>
+			</td>
+		
+	  </tr>
+	  <tr><td colspan="4"><hr></td></tr>
+	  
+	  <tr>
+		<td colspan="2" valign="top" align="left">
+			Customer Name:  <?php echo $this->cFirstName.' '.$this->cLastName ;?>
+		</td>
+		
+	  </tr>
+	  <tr>
+		<td colspan="2" valign="top" align="left">
+			Customer Email: <?php echo $this->cEmail ;?>
+		</td>
+	  </tr>
+	  <tr>
+		<td colspan="2" valign="top" align="left">
+			Customer Phone: <?php echo $this->cPhone ;?>
+		</td>
+	  </tr>
+		
+        <tr>
+          <td colspan="2" valign="top" width="60%">
+            <table border="0" cellpadding="4" cellspacing="0">
+              <tbody><tr>
+                <td colspan="2" class="tableSection"><strong>Vehicle Information </strong></td>
+                </tr>
+              <tr>
+                <td>Vehicle: </td>
+                <td><?php echo $this->year ;?>&nbsp;<?php echo $this->modelName ;?>&nbsp;<?php echo $this->trimName ;?></td>
+              </tr>
+              <tr>
+                <td>Exterior Color: </td>
+                <td><?php echo $this->ecLabel ;?></td>
+              </tr>
+              <tr>
+                <td>Interior:</td>
+                <td><?php echo $this->icLabel ;?></td>
+              </tr>
+            </tbody></table>
+          </td>
+		
+          <td colspan="2" valign="top" width="40%">
+            <table border="0" cellpadding="4" cellspacing="0">
+              <tbody><tr>
+                <td colspan="2" class="tableSection"><strong>Financial Information  </strong></td>
+              </tr>
+              <tr>
+                <td>Additional Downpayment: </td>
+				
+                <td>$0.00</td>
+              </tr>
+			  
+            </tbody></table>
+          </td>
+		
+        </tr>
+      </tbody></table>
+      <h2 class="pageSubhead">Products Added</h2>
+
+      <table border="0" cellpadding="4" cellspacing="0">
+        <tbody><tr>
+          <td class="tableHead"><strong>Name</strong></td>
+          <td class="tableHead" nowrap="nowrap">Sku</td>
+          <td class="tableHead" nowrap="nowrap">Manufacturer</td>
+          <td class="tableHead" align="right" nowrap="nowrap"><strong>Price </strong></td>
+        </tr>
+        
+        <?php echo $this->partsList; ?>
+		
+        <tr>
+          <td colspan="3" class="totalRow" align="right">Total:</td>
+          <td class="totalRow" align="right" nowrap="nowrap">$<?php echo $this->totalAmount ;?></td>
+        </tr>
+		<tr>
+          <td colspan="3" class="totalRow" align="right">Tax:</td>
+			
+		  <td class="totalRow" align="right" nowrap="nowrap">$<?php echo $this->tax ;?> </td>
+        </tr>
+
+
+		<tr>
+          <td colspan="3" class="totalRow" align="right"><strong>Grand Total:</strong></td>
+			
+          <td class="totalRow" align="right" nowrap="nowrap"><strong> $<?php echo $this->grandTotal ;?> </strong></td>
+        </tr>
+
+
+      </tbody></table>
+
+      <input name="DealID" value="E34A6591-1AAC-418C-9C06-B1E8F16BB33C" type="hidden">
+
+</form>
+<hr noshade="noshade" size="1">
+<p>a)	Payments are based upon the terms the dealer has prenegotiated with you (the customer) and added to the accessory software. <br>
+  b) Although best efforts are made to make sure that parts shown are 
+available, there is no guarantee that the parts will be available after 
+the completion of purchase. <br>
+  c) Dealer will make best efforts to arrange financing of parts 
+purchased. Dealer does not provide any guarantee that the bank will 
+finance parts. <br>
+  d) The purpose of visual feature is to show an approximate look of a 
+certain part on the vehicle. Final look and feel may be different than 
+what is shown here. <br>
+  e) Parts ordered require an acquisition process and may take days or 
+weeks to install. Customer may take delivery of the vehicle w/o these 
+parts. Customer understands that due to the custom nature of parts 
+customer may not be able to cancel the order. <br>
+  f) Prices shown are for marketing and advertising purposes only. 
+Customer understands that due to the volume of parts advertised there 
+may be an occasional error in pricing. On such rare occasions dealer is 
+not obligated to sell the accessories. </p>
+<table width="517" border="0">
+  <tbody><tr>
+    <td width="25" height="49"><table width="19" border="1" bordercolor="#999999" cellpadding="0" cellspacing="0" height="15">
+      <tbody><tr>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+    <td width="482">I accept the purchase of accessories above with the terms listed. </td>
+    </tr>
+  <tr>
+    <td height="49"><table width="19" border="1" bordercolor="#999999" cellpadding="0" cellspacing="0" height="15">
+      <tbody><tr>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+    <td>I decline the purchase of accessories presented. </td>
+    </tr>
+</tbody></table>
+<p>&nbsp;</p>
+<p><br>
+  Signed:	_________________________________________ Date: __________ </p>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+{
+	//window.print();
+	//setTimeout("window.print()",5);
+}
+</script>
+</body></html>

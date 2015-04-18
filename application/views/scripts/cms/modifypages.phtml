@@ -1,0 +1,61 @@
+
+        <div class="adpage-title">
+        	<div class="title" >Modify CMS Page</div>
+        </div>
+        
+        <div class="user-strip">
+        	<?php echo $this->links; ?>
+            <div class="clear"></div>
+        </div>
+
+		
+        <!--#quick links-->
+        <div class="option-box-top">
+        	<div class="heading">CMS Pages</div>
+        </div>
+        <div class="option-box-middle">
+			<div class="quick-links-wrapper">
+             	<div id="navcontainer">
+                   <br/>
+				   <?php 
+				   		echo $this->form ;
+				   ?>
+                <div class="clear"></div>
+                </div>   
+            </div>
+        </div>
+        <div class="option-box-bottom"></div>
+        <br />
+        <!--$quick links-->
+        
+        <br />
+        <!-- $Contents -->
+        
+        
+        <script type="text/javascript" src="<?php echo $this->baseUrl() ;?>/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+
+	CKEDITOR.replace( 'varValue',
+	{
+		enterMode : CKEDITOR.ENTER_BR,
+		height:"600",
+		width:"650",
+		
+	toolbar :
+      [
+	   ['Source'], '/',
+    ['Cut','Copy','Paste','PasteText'],
+    ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+    ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
+    ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+    ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+    ['Link','Unlink','Anchor'],
+    ['Table','HorizontalRule'],
+    ['Styles','Format','Font','FontSize'],
+    ['TextColor','BGColor'],
+	['Maximize']
+    ]
+
+
+	});
+</script> 

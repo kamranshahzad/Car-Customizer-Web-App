@@ -1,0 +1,47 @@
+<div class="ConfigContainer">
+	<div class="top"><img src="<?php echo $this->baseUrl();?>/images/car-color-option-images/top.png" width="901" height="5" alt="" /></div>
+	<div class="mid">
+	<div class="midContainer">
+	<div class="topheading">
+	<div class="leftheading"><img src="<?php echo $this->baseUrl() ;?>/images/configuration-page-images/heading.png" width="481" height="17" /></div>
+	
+	</div>
+	<div class="contenContainer">
+	<div class="left">
+	<div class="head">Configure your own Deal</div>
+	<div class="btn"><a href="<?php echo $this->url(array('controller'=>'make','action'=>'index')) ?>"><img src="<?php echo $this->baseUrl() ;?>/images/configuration-page-images/select-vehicle-btn.png" width="152" height="34" /></a></div>
+	</div>
+	<div class="right">
+	<div class="head">I have an AOC Ref No.</div>
+	<form action="" name="abc" id="abc" method="post" enctype="multipart/form-data">
+    <div class="formContainer">
+	<div class="fieldContainer">
+	<div class="text">AOC Ref No.: </div>
+	<div class="field">
+	  <label>
+	  <input type="text" name="refNo" id="refNo" />
+	  </label>
+	</div>
+	<div class="clear"></div>
+    <span class="arial-12-red"><?php echo $this->errorMessage; ?></span>
+	</div>
+	<!--<div class="fieldContainer">
+	<div class="text">Customer Email: </div>
+	<div class="field">
+	  <input type="text" name="customerEmail" id="customerEmail" />
+	</div>
+	<div class="clear"></div>
+    
+	</div>-->
+	<div class="btn"><input type="image" src="<?php echo $this->baseUrl() ;?>/images/configuration-page-images/open-deal-btn.png" width="122" height="35" /></div>
+	</div>
+    </form>
+	
+	</div>
+	<div class="clear"></div>
+	</div>
+	</div>
+	</div>
+	<div class="bottom"><img src="<?php echo $this->baseUrl() ;?>/images/car-color-option-images/bottom.png" width="901" height="6" alt="" /></div>
+	
+	</div>

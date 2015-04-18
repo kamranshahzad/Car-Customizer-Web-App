@@ -1,0 +1,12 @@
+label.error {
+ padding: 2px 0 2px 18px;
+    border: solid 1px red;
+    background: #ffff99 url(../images/unchecked.gif) no-repeat 2px center;
+}
+
+label.checked {
+   padding: 2px 0 2px 18px;
+    border: solid 1px green;
+    background: url(../images/checked.gif) no-repeat 2px center;
+}
+

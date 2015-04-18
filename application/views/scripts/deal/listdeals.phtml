@@ -1,0 +1,65 @@
+      <div class="adpage-title">
+        <div class="title" >Deals Listing</div>
+      </div>
+      <div class="user-strip">
+			<?php echo $this->links; ?>
+        <div class="clear"></div>
+        <div style="margin-top:12px;margin-bottom:15px;">
+        	<?php echo $this->addOption; ?>
+        </div>
+        <div class="clear"></div>
+      </div>
+      
+      <!--#quick links-->
+
+       <?php
+	   		echo $this->topWrapper;
+       	  	echo $this->form;
+			echo $this->bottomWrapper;
+	   ?>
+       
+	   <?php
+              if(isAllowd($this->roleId)){
+	   ?>
+       <br/>
+       <ul class="tabs">
+            <li><a href="#tab1"><b>DMS Deals</b></a></li>
+            <li><a href="#tab2"><b>User Deals</b></a></li>
+       </ul>
+       <div class="tab_container">
+                    <div id="tab1" class="tab_content">
+						<?php 
+							echo $this->pendingDeal;
+							echo '<br/>';
+							echo $this->openDeal;
+							echo '<br/>';
+							echo $this->completeDeal; 
+							echo '<br/>';
+							echo $this->finalDeal; 
+							echo '<br/>';
+							
+						?>
+                    </div>
+                    <div id="tab2" class="tab_content">
+                         <?php echo $this->userDeals; ?>
+                    </div>
+        </div>
+        <div class="clear"></div>
+        <br />
+       <?php	
+			  }else{
+				echo $this->ownDeals;	
+			  }
+	   ?>
+       
+       
+
+
+	  <?php
+      function isAllowd($roleId){
+		  if($roleId == 1 || $roleId == 2 || $roleId == 3){
+			 return true; 
+		  }
+		  return false;
+	  }
+	  ?>

@@ -1,0 +1,93 @@
+
+
+/* Scroll Bar Master Styling Starts Here */
+/* comments can freely be removed from this file */
+
+/* do not modify .scrollgeneric class, required for proper operation */
+.scrollgeneric {
+line-height: 1px; font-size: 1px;
+position: absolute; top: 0; left: 0;
+}
+
+.vscrollerbase, .vscrollerbar {
+width: 10px; 
+}
+
+.hscrollerbase, .hscrollerbar {
+/*height: 15px;*/
+}
+
+.vscrollerbar, .hscrollerbar {
+/*padding information of these elements are only used for
+padding of the scroll-bar with respect to the scroll base,
+the padding will automatically be turned off by the script*/
+padding-top: 5px;
+/* z-index for scrollbars no longer has to be given as of version
+1.7.5 for correct operation, but it is still recommended, as this
+decides the z-index for content.*/
+z-index: 5;
+}
+.vscrollerbarbeg {
+/*top image holder for vertical scroll bar*/
+/*background: url(../images/1x1_grey.gif) no-repeat center center;*/
+background:url(../images/scroller.gif) no-repeat top right;
+/*background: url(../images/scroll-pointer.jpg) center center;*/
+width: 10px;
+/* height is auto set by the script to fit the scrollbar */
+}
+
+.vscrollerbarend {
+/*bottom image holder for vertical scroll bar*/
+background: url(../../images/1x1.gif) no-repeat;
+width: 10px;
+}
+
+.hscrollerbarbeg {
+/*left image holder for horizontal scroll bar*/
+background: url(../../images/hscroller.png) 0px -17px;
+height: 18px;
+/* width is auto set by the script to fit the scrollbar */
+}
+
+.hscrollerbarend {
+/*right image holder for horizontal scroll bar*/
+background: url(../../images/hscroller.png);
+height: 10px; width: 10px;
+}
+
+/* Following are OPTIONAL */
+
+.vscrollerbase, .hscrollerbase {
+
+background-image: url(../../images/scrollbar.gif) ;
+/*height:150px;*/
+}
+
+.hscrollerbasebeg {
+/*height: 15px;
+background: url(../images/scroll_up.gif) no-repeat;
+ width is auto set to fill the base */
+}
+
+.hscrollerbaseend {
+/*height: 18px; width: 7px;
+background: url(../images/scroll_up.gif) no-repeat;*/
+}
+
+.vscrollerbasebeg {
+/* width: 26px;
+background: url(../images/scroll_up.gif) no-repeat;
+height is auto set to fill the base */
+}
+
+.vscrollerbaseend {
+/*height: 25px; width: 26px;
+background: url(../images/scroll_down.gif) no-repeat;*/
+}
+
+.scrollerjogbox {
+width: 50px; height: 50px;
+top: auto; left: auto; bottom: 0px; right: 0px;
+background: white url(../../css/images/scrolljog.png);
+}
+/* Scroll Bar Master Styling Ends Here */
