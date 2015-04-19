@@ -3,9 +3,9 @@
 class AddOnCars {
 	
 		var $dbhost = "localhost";
-        var $dbname = "webdesig_aoc";
-        var $dbuser = "webdesig_supper";
-        var $dbpass = "!pMO0NoEmBQa";
+        var $dbname = "dbuser";
+        var $dbuser = "username";
+        var $dbpass = "password";
         
         function AddOnCars()
         {
